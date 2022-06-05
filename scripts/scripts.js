@@ -7,6 +7,8 @@ let slideInterval;
 
 let isMouseEntered = false;
 
+const mediaQuery = window.matchMedia("(min-width: 768px)");
+
 $(document).ready(() => {
   slideInterval = setInterval(autoSlider, 10000);
   productDotClickSlider();
@@ -14,9 +16,9 @@ $(document).ready(() => {
   addToWishlist();
   setBannerWidth();
   bannerDotClickSlider();
-  let isCarousel = document.querySelector(".owl-carousel")
+  let isCarousel = document.querySelector(".owl-carousel");
 
-  if(isCarousel){
+  if (isCarousel) {
     $(".owl-carousel").owlCarousel({
       loop: true,
       margin: 10,
@@ -38,97 +40,95 @@ $(document).ready(() => {
 });
 
 const closeOrderStatus = () => {
-  $(".popup-container").animate({trasnform:"scale(0)"},300, () => {
-    $(".popup-bg").animate({opacity:0},300,()=>{
-      $(".popup-bg").css("display","none")
-    })
-  })
-}
+  $(".popup-container").animate({ trasnform: "scale(0)" }, 300, () => {
+    $(".popup-bg").animate({ opacity: 0 }, 300, () => {
+      $(".popup-bg").css("display", "none");
+    });
+  });
+};
 
 const setupImageZoom = () => {
-  let image = $(".main-image"),
-    zoomLens = $(".img-zoom-lens"),
-    result = $(".image-preview"),
-    zoomBox = document.querySelector(".zoom-box")
+  if (mediaQuery.matches) {
+    let image = $(".main-image"),
+      zoomLens = $(".img-zoom-lens"),
+      result = $(".image-preview"),
+      zoomBox = document.querySelector(".zoom-box");
 
-  console.log(zoomBox.offsetWidth,zoomBox.offsetHeight);
-  zoomLens.css("display","block")
+    console.log(zoomBox.offsetWidth, zoomBox.offsetHeight);
+    zoomLens.css("display", "block");
 
+    result.css({
+      display: "block",
+      width: zoomBox.offsetWidth + "px",
+      height: zoomBox.offsetHeight + "px",
+    });
 
+    if (!isMouseEntered) {
+      image.mousemove(moveLens);
+      isMouseEntered = true;
+    }
 
-  result.css({
-    display: "block",
-    width: zoomBox.offsetWidth + "px",
-    height: zoomBox.offsetHeight + "px",
+    cx = zoomBox.offsetWidth / zoomLens.width();
+    cy = zoomBox.offsetHeight / zoomLens.height();
 
-  })
+    result.css({
+      backgroundImage: `url(${image.attr("src")})`,
+      backgroundSize: image.width() * cx + "px " + image.height() * cy + "px",
+    });
 
+    // zoomLens.mousemove(moveLens)
 
-  if(!isMouseEntered){
-    image.mousemove(moveLens)
-    isMouseEntered = true;
+    getCursorPosition();
   }
-
-  cx = zoomBox.offsetWidth / zoomLens.width();
-  cy = zoomBox.offsetHeight / zoomLens.height()
-
-  result.css({
-    backgroundImage: `url(${image.attr('src')})`,
-    backgroundSize : (image.width() * cx) + "px " + (image.height() * cy) + "px",
-  })
-  
-  // zoomLens.mousemove(moveLens)
-
-  getCursorPosition()
-  
-}
+};
 
 const moveLens = (e) => {
-  let lens = document.querySelector(".img-zoom-lens")
-  let img = document.querySelector(".main-image")
-  let zoomLens = $(".img-zoom-lens")
-  let  result = $(".image-preview")
-  let pos = getCursorPosition(e)
-  let x = pos.x - (lens.offsetWidth / 2)
-  let y = pos.y - (lens.offsetHeight / 2)
-  
-  if(x < 0) x = 0
-  if(y < 0) y = 0
-  if(x > img.width - lens.offsetWidth) x = img.width - lens.offsetWidth
-  if(y > img.height - lens.offsetHeight) y = img.height - lens.offsetHeight
+  let lens = document.querySelector(".img-zoom-lens");
+  let img = document.querySelector(".main-image");
+  let zoomLens = $(".img-zoom-lens");
+  let result = $(".image-preview");
+  let pos = getCursorPosition(e);
+  let x = pos.x - lens.offsetWidth / 2;
+  let y = pos.y - lens.offsetHeight / 2;
+
+  if (x < 0) x = 0;
+  if (y < 0) y = 0;
+  if (x > img.width - lens.offsetWidth) x = img.width - lens.offsetWidth;
+  if (y > img.height - lens.offsetHeight) y = img.height - lens.offsetHeight;
   $(".img-zoom-lens").css({
     left: x + "px",
-    top: y + "px"
-  })
+    top: y + "px",
+  });
 
   cx = result.width() / zoomLens.width();
-  cy = result.height() / zoomLens.height()
+  cy = result.height() / zoomLens.height();
 
   $(".image-preview").css({
-    backgroundPosition:  "-" + (x * cx) + "px -" + (y * cy) + "px"
-  })
-  
-}
+    backgroundPosition: "-" + x * cx + "px -" + y * cy + "px",
+  });
+};
 
 const getCursorPosition = (e) => {
   e = e || window.event;
-  let bouding = document.querySelector(".main-image").getBoundingClientRect()
-  posX = e.pageX - bouding.left
-  posY = e.pageY - bouding.top
+  let bouding = document.querySelector(".main-image").getBoundingClientRect();
+  posX = e.pageX - bouding.left;
+  posY = e.pageY - bouding.top;
   posX = posX - window.pageXOffset;
   posY = posY - window.pageYOffset;
-  return {x:posX,y:posY}
-}
+  return { x: posX, y: posY };
+};
 
 const closeZoom = () => {
-  console.log("here");
-  $(".img-zoom-lens").css("display","none")
-  $(".image-preview").css("display","none")
-}
+  if (mediaQuery.matches) {
+    console.log("here");
+    $(".img-zoom-lens").css("display", "none");
+    $(".image-preview").css("display", "none");
+  }
+};
 
 const setBannerWidth = () => {
   let carousel = $(".carousel");
-  let isAvailable = document.querySelector(".carousel")
+  let isAvailable = document.querySelector(".carousel");
   if (isAvailable) {
     homeBannerLength = carousel[0].children.length;
     carousel.css("width", `${homeBannerLength * 100}%`);
@@ -140,7 +140,45 @@ const setBannerWidth = () => {
   }
 };
 
+let product_img = document.querySelector("#myimage");
 
+product_img.addEventListener("click", function () {
+  $("#modal-container").removeAttr("class").addClass("active");
+  $("body").addClass("modal-active");
+});
+
+$(".close_btn").click(function () {
+  $("#modal-container").removeAttr("class").addClass("out");
+  $("body").removeAttr("class");
+});
+
+var e = $(".modal"),
+  t = $("#modal-zoom-src"),
+  a = e.find(".zoom-container");
+
+$("body").on("click", "#myimage", function (sa) {
+  console.log(sa.target);
+  var i = $(window).height(),
+    s = $(window).width();
+
+  console.log(product_img);
+
+  t.attr("src", product_img.getAttribute("src"));
+
+  a.css({
+    height: i,
+    width: s,
+  });
+
+  e.css("overflow", "scroll");
+
+  $("#modal-zoom-src").css({
+    height: "100vh",
+    width: "200vw",
+  });
+
+  document.querySelector(".modal").scrollTo(300, 300);
+});
 
 // Banner slide functions
 const autoSlider = () => {
