@@ -1,0 +1,144 @@
+.dashboard--container {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dashboard--container .navigation-container {
+  display: block;
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+.dashboard--container .navigation-container .navigation--wrapper .profile--nav {
+  height: 10rem;
+  padding: 3rem;
+}
+
+.dashboard--container .navigation-container .navigation--wrapper .profile-nav--image {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.dashboard--container .navigation-container .navigation--wrapper .profile-name--wrapper {
+  margin-left: 3rem;
+  cursor: pointer;
+}
+
+.dashboard--container .navigation-container .navigation--wrapper .profile-name--wrapper h3 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.dashboard--container .navigation-container .navigation--wrapper .profile-name--wrapper p {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.dashboard--container .navigation-container .navigation--wrapper .dashboard-nav {
+  cursor: pointer;
+  height: 8rem;
+}
+
+.dashboard--container .navigation-container .navigation--wrapper .dashboard-nav .nav--item {
+  pointer-events: none;
+  margin: 0.5rem 0 0 1rem;
+}
+
+.dashboard--container .navigation-container .navigation--wrapper .dashboard-nav .nav--item .nav--icon {
+  width: 4rem;
+}
+
+.dashboard--container .navigation-container .navigation--wrapper .dashboard-nav .nav--item span {
+  margin-left: 3rem;
+  font-size: 1.5rem;
+}
+
+.dashboard--container .navigation-container .navigation--wrapper .dashboard-nav:hover {
+  background-color: #eaeaea;
+  border-radius: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .dashboard--container {
+    display: none !important;
+  }
+  footer {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .dashboard--container .navigation-container {
+    margin-top: 6rem;
+  }
+  .dashboard--container .navigation-container .navigation--wrapper .profile--nav .profile-nav--image {
+    width: 6rem;
+    height: 6rem;
+    border: 2px solid #fff;
+  }
+  .dashboard--container .navigation-container .navigation--wrapper .profile--nav .profile-name--wrapper h3 {
+    font-size: 1.5rem;
+  }
+  .dashboard--container .navigation-container .navigation--wrapper .profile--nav .profile-name--wrapper p {
+    font-size: 1rem;
+  }
+  .dashboard--container .navigation-container .navigation--wrapper .dashboard-nav {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .dashboard--container .navigation-container .navigation--wrapper .dashboard-nav .nav--item .nav--icon {
+    width: 3.5rem;
+  }
+  .dashboard--container .navigation-container .navigation--wrapper .dashboard-nav .nav--item span {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .dashboard--container .navigation-container .navigation--wrapper .profile--nav {
+    height: 8rem;
+    padding: 1.5rem;
+  }
+  .dashboard--container .navigation-container .navigation--wrapper .dashboard-nav {
+    padding: 0.2rem;
+  }
+  .dashboard--container .navigation-container .navigation--wrapper .dashboard-nav .nav--item {
+    padding: 0.5rem;
+  }
+  .dashboard--container .navigation-container .navigation--wrapper .dashboard-nav .nav--item .nav--icon {
+    width: 3rem;
+  }
+  .dashboard--container .navigation-container .navigation--wrapper .dashboard-nav .nav--item span {
+    margin-left: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .dashboard--container .navigation-container .navigation--wrapper .profile--nav {
+    height: 7rem;
+  }
+  .dashboard--container .navigation-container .navigation--wrapper .profile--nav .profile-nav--image {
+    width: 5rem;
+    height: 5rem;
+  }
+  .dashboard--container .navigation-container .navigation--wrapper .profile--nav .profile-name--wrapper {
+    margin-left: 1rem;
+  }
+  .dashboard--container .navigation-container .navigation--wrapper .profile--nav .profile-name--wrapper h3 {
+    font-size: 1.3rem;
+  }
+  .dashboard--container .navigation-container .navigation--wrapper .profile--nav .profile-name--wrapper p {
+    font-size: 0.8rem;
+  }
+  .dashboard--container .navigation-container .navigation--wrapper .dashboard-nav .nav--item span {
+    font-size: 1.1rem;
+  }
+}
+/*# sourceMappingURL=mobile-dashboard.css.map */

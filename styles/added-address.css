@@ -1,0 +1,197 @@
+.dashboard--container {
+  -ms-grid-rows: none !important;
+      grid-template-rows: none !important;
+}
+
+.manage-address--title {
+  color: #0038A5;
+}
+
+.manage-address-wrapper .manage-address-card {
+  margin-bottom: 1.5rem !important;
+}
+
+.manage-address-wrapper .manage-address-card .manage-address-content .manage-address-details {
+  margin-left: 0 !important;
+}
+
+.manage-address-wrapper .billing-address-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.manage-address-wrapper .billing-address-card .billing-address-content {
+  width: 100%;
+}
+
+.manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details {
+  position: relative;
+}
+
+.manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details .title-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details .title-wrapper .billing-address-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details .title-wrapper .option {
+  cursor: pointer;
+}
+
+.manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details .title-wrapper .options {
+  cursor: pointer;
+}
+
+.manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details .options-wrapper-active {
+  display: block !important;
+}
+
+.manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details .options-wrapper-actives {
+  display: block !important;
+}
+
+.manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details .options-wrappers {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  right: -1rem;
+}
+
+.manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details .options-wrappers .options-content {
+  width: 6rem;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4rem;
+  -webkit-box-shadow: 0px 0px 10px 0px #0000004D;
+          box-shadow: 0px 0px 10px 0px #0000004D;
+}
+
+.manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details .options-wrappers .options-content p {
+  font-size: 0.9rem;
+}
+
+.manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details .options-wrappers .options-content .edit {
+  border-bottom: 1px solid #000000;
+  width: 95%;
+  padding-bottom: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details .options-wrappers .options-content .delete {
+  padding-top: 0.5rem;
+}
+
+.manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details .options-wrapper {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  right: -1rem;
+}
+
+.manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details .options-wrapper .options-content {
+  width: 6rem;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4rem;
+  -webkit-box-shadow: 0px 0px 10px 0px #0000004D;
+          box-shadow: 0px 0px 10px 0px #0000004D;
+}
+
+.manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details .options-wrapper .options-content p {
+  font-size: 0.9rem;
+}
+
+.manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details .options-wrapper .options-content .edit {
+  border-bottom: 1px solid #000000;
+  width: 95%;
+  padding-bottom: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details .options-wrapper .options-content .delete {
+  padding-top: 0.5rem;
+}
+
+.manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details .address {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .dashboard--container {
+    -ms-grid-rows: 1fr 1.8fr !important;
+        grid-template-rows: 1fr 1.8fr !important;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .dashboard--container {
+    -ms-grid-rows: 1fr 1fr !important;
+        grid-template-rows: 1fr 1fr !important;
+  }
+  .manage-address-wrapper .manage-address-card {
+    margin-bottom: 0 !important;
+    padding: 1rem !important;
+  }
+  .manage-address-wrapper .billing-address-card {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding-bottom: 1.5rem;
+    padding: 1rem;
+  }
+  .manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details .options-wrapper-active {
+    right: 0;
+  }
+  .manage-address-wrapper .billing-address-card .billing-address-content .billing-address-details .options-wrapper-actives {
+    right: 0 !important;
+  }
+}
+/*# sourceMappingURL=added-address.css.map */

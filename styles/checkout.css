@@ -1,0 +1,630 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600&display=swap");
+@font-face {
+  font-family: 'primary';
+  src: url("assets/fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Helvetica', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  color: #0c0c0c;
+}
+
+.checkout--container {
+  background-color: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 12%;
+}
+
+.checkout--container .checkout-main {
+  margin-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.checkout--container .checkout-main .checkout-input-container {
+  background-color: #fff;
+  margin: 1rem 0 2rem 0;
+  width: 65%;
+}
+
+.checkout--container .checkout-main .checkout-input-container .checkout-input-main {
+  padding: 2rem;
+}
+
+.checkout--container .checkout-main .checkout-input-container .checkout-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.checkout--container .checkout-main .checkout-input-container .checkout-header p {
+  padding-right: 0.5rem;
+  color: #00000099;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.checkout--container .checkout-main .checkout-input-container .checkout-header .checkout {
+  color: #FA575A;
+}
+
+.checkout--container .checkout-main .checkout-input-container .checkout-header span {
+  padding-right: 0.5rem;
+  color: #00000099;
+  margin-top: 1px;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.checkout--container .checkout-main .checkout-input-container .billing-address-header {
+  margin-bottom: 1rem;
+}
+
+.checkout--container .checkout-main .checkout-input-container .billing-address-header h2 {
+  font-weight: 600;
+  color: #000000;
+}
+
+.checkout--container .checkout-main .checkout-input-container .billing-address-header a {
+  color: #3177FF;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.checkout--container .checkout-main .checkout-input-container .billing-address-header .login-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.checkout--container .checkout-main .checkout-input-container .billing-address-header .login-section .login-return-customer {
+  padding-right: 1rem;
+  font-weight: 500;
+}
+
+.checkout--container .checkout-main .checkout-input-container .billing-address-header .signup-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.checkout--container .checkout-main .checkout-input-container .billing-address-header .signup-section .signup-or {
+  padding-right: 1rem;
+}
+
+.checkout--container .checkout-main .checkout-input-container .billing-address-input-content .billing-inputs .biinputs-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.checkout--container .checkout-main .checkout-input-container .billing-address-input-content .billing-inputs .biinputs-container .binputs {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.checkout--container .checkout-main .checkout-input-container .billing-address-input-content .billing-inputs .biinputs-container .binputs label {
+  color: #00000099;
+  font-weight: 505;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.checkout--container .checkout-main .checkout-input-container .billing-address-input-content .billing-inputs .biinputs-container .binputs input {
+  padding: 0.5rem;
+  width: 95%;
+  outline: none;
+  padding-left: 0.5rem;
+  border-radius: 3px;
+  border: 1px solid #00000080;
+}
+
+.checkout--container .checkout-main .checkout-input-container .billing-address-input-content .billing-inputs .billing-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.checkout--container .checkout-main .checkout-input-container .billing-address-input-content .billing-inputs .billing-checkbox .checkbox {
+  margin-right: 1rem;
+  border: 1px solid #000000;
+  cursor: pointer;
+  width: 2rem;
+  height: 1.5rem;
+  margin-left: -4px;
+}
+
+.checkout--container .checkout-main .checkout-input-container .billing-address-input-content .billing-inputs .billing-checkbox p {
+  color: #1A5CDD;
+  font-weight: 600;
+}
+
+.checkout--container .checkout-main .checkout-input-container .billing-address-input-content .billing-inputs .shipping-header {
+  margin-top: 2rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.checkout--container .checkout-main .checkout-input-container .billing-address-input-content .billing-inputs .btn-save {
+  margin: 1rem 0 3rem 0;
+  margin-bottom: 3rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#C44786), to(#E55C5B));
+  background: linear-gradient(180deg, #C44786 0%, #E55C5B 100%);
+  color: #fff;
+  width: 8.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.checkout--container .checkout-main .total-price-container {
+  background-color: #fff;
+  margin: 1rem 0 2rem 1rem;
+  width: 35%;
+  height: 37rem;
+  border-radius: 10px;
+}
+
+.checkout--container .checkout-main .total-price-container .total-price-main {
+  padding: 1rem;
+  width: 100%;
+}
+
+.checkout--container .checkout-main .total-price-container .total-price-main h3 {
+  font-weight: 700;
+  color: #000000;
+  padding-bottom: 1rem;
+  border-bottom: 0.1px solid #00000033;
+  width: 90%;
+  margin-bottom: 1rem;
+}
+
+.checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .border {
+  border: 1px solid #00000033;
+  margin-bottom: 2rem;
+  width: 90%;
+}
+
+.checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .total-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem 0 2rem 0;
+}
+
+.checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .total-inputs .total-inputs-value {
+  color: #009217;
+  font-weight: 600;
+}
+
+.checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .total-inputs .total-inputs-key {
+  color: #000000B2;
+  font-weight: 600;
+}
+
+.checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .total-inputs .total-inputs-reminder {
+  color: #FF5D50;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .total-inputs .total-inputs-total-key {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .total-inputs .total-inputs-total-value {
+  font-weight: 600;
+  color: #009217;
+  font-size: 1.1rem;
+}
+
+.checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .coupon {
+  font-weight: 600;
+  color: #000000B2;
+}
+
+.checkout--container .checkout-main .total-price-container .total-price-main .total-price-content small {
+  font-weight: 400;
+  color: #000000;
+}
+
+.checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .coupon-code-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #00000080;
+  height: 2rem;
+  margin: 0.5rem 0 0 0;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .coupon-code-container .arrow {
+  position: absolute;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .coupon-code-container .coupon-code {
+  padding: 0 0.5rem 0 0.5rem;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .coupon-code-container .material-icons-outlined {
+  background: -webkit-gradient(linear, left top, left bottom, from(#C44786), to(#E55C5B));
+  background: linear-gradient(180deg, #C44786 0%, #E55C5B 100%);
+  color: #fff;
+  height: 1.9rem;
+  border-radius: 5px;
+  width: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .coupon-code-container ::-webkit-input-placeholder {
+  color: #00000066;
+}
+
+.checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .coupon-code-container :-ms-input-placeholder {
+  color: #00000066;
+}
+
+.checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .coupon-code-container ::-ms-input-placeholder {
+  color: #00000066;
+}
+
+.checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .coupon-code-container ::placeholder {
+  color: #00000066;
+}
+
+.checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .button button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#C44786), to(#E55C5B));
+  background: linear-gradient(180deg, #C44786 0%, #E55C5B 100%);
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+  height: 2rem;
+  width: 8rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1370px) {
+  .checkout--container {
+    padding: 0 5%;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .checkout--container .checkout-main .checkout-input-container .checkout-header p {
+    font-size: 0.8rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-header span {
+    font-size: 1rem;
+    margin-top: 1px;
+  }
+  .checkout--container .checkout-main .checkout-input-container .billing-address-header .login-section .login-return-customer {
+    font-size: 0.9rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .billing-address-header .login-section .signup-section .signup-or {
+    font-size: 0.9rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .billing-address-header h2 {
+    font-size: 1.4rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .billing-address-header a {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .checkout--container .checkout-main .checkout-input-container .billing-address-input-content .billing-inputs .billing-checkbox p {
+    font-size: 0.9rem;
+  }
+  .checkout--container .checkout-main .total-price-container .total-price-main h3 {
+    font-size: 1.1rem;
+  }
+  .checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .total-inputs .total-inputs-key {
+    font-size: 0.9rem;
+  }
+  .checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .total-inputs .total-inputs-value {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .total-inputs .total-inputs-key {
+    font-size: 0.8rem;
+  }
+  .checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .total-inputs .total-inputs-value {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .checkout--container .checkout-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .checkout--container .checkout-main .checkout-input-container {
+    width: 100%;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .checkout-header p {
+    font-size: 0.8rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-header a {
+    font-size: 1rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-header .login-section .login-return-customer {
+    font-size: 1rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-header .signup-section .signup-or {
+    font-size: 1rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-header h2 {
+    font-size: 1.7rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .biinputs-container .binputs {
+    width: 100%;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .biinputs-container .binputs input {
+    width: 90%;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .biinputs-container .binputs label {
+    font-size: 1rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .billing-checkbox p {
+    font-size: 1rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs h3 {
+    font-size: 1.7rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .btn-save {
+    width: 10.5rem;
+    height: 3.5rem;
+  }
+  .checkout--container .checkout-main .total-price-container {
+    width: 20rem;
+    height: 35rem;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .checkout--container .checkout-main .total-price-container .total-price-main h3 {
+    font-size: 1.3rem;
+  }
+  .checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .total-inputs {
+    margin: 2rem 0 1rem 0;
+  }
+  .checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .total-inputs .total-inputs-key {
+    font-size: 1rem;
+  }
+  .checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .total-inputs .total-inputs-value {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main {
+    padding: 1rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .checkout-header p {
+    font-size: 0.7rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-header a {
+    font-size: 0.9rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-header .login-section .login-return-customer {
+    font-size: 0.9rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-header .signup-section .signup-or {
+    font-size: 0.9rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-header h2 {
+    font-size: 1.4rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .biinputs-container .binputs input {
+    width: 98%;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .biinputs-container .binputs label {
+    font-size: 0.9rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .billing-checkbox .checkbox {
+    height: 1rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .billing-checkbox p {
+    font-size: 0.8rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs h3 {
+    font-size: 1.4rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .btn-save {
+    width: 9.5rem;
+    height: 3rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .checkout--container {
+    padding: 0;
+  }
+  .checkout--container .checkout-main {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container {
+    width: 100%;
+    margin: 2rem 0 0rem 0;
+    border-bottom: 1px solid #000;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .checkout-header p {
+    font-size: 0.7rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .checkout-header span {
+    font-size: 0.8rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-header a {
+    font-size: 0.8rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-header .login-section .login-return-customer {
+    font-size: 0.8rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-header .signup-section .signup-or {
+    font-size: 0.8rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-header h2 {
+    font-size: 1.3rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .billing-checkbox p {
+    font-size: 0.8rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs h3 {
+    font-size: 1.3rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .btn-save {
+    width: 8rem;
+    height: 2.8rem;
+    margin-bottom: 0;
+  }
+  .checkout--container .checkout-main .total-price-container {
+    margin: 0;
+    width: 100%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 2rem;
+    border-radius: 0;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .checkout-header {
+    margin-bottom: 1rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .checkout-header p {
+    font-size: 0.6rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-header a {
+    font-size: 0.7rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-header .login-section .login-return-customer {
+    font-size: 0.7rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-header .signup-section .signup-or {
+    font-size: 0.7rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-header h2 {
+    font-size: 1.1rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .biinputs-container .binputs label {
+    font-size: 0.8rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .billing-checkbox p {
+    font-size: 0.7rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs h3 {
+    font-size: 1.1rem;
+  }
+  .checkout--container .checkout-main .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .btn-save {
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+  }
+  .checkout--container .checkout-main .total-price-container {
+    height: 33rem;
+  }
+  .checkout--container .checkout-main .total-price-container .total-price-main h3 {
+    font-size: 1rem;
+  }
+  .checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .total-inputs .total-inputs-key {
+    font-size: 0.8rem;
+  }
+  .checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .total-inputs .total-inputs-value {
+    font-size: 0.8rem;
+  }
+  .checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .total-inputs .total-inputs-reminder {
+    font-size: 0.8rem;
+  }
+  .checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .total-inputs .total-inputs-total-key {
+    font-size: 1rem;
+  }
+  .checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .total-inputs .total-inputs-total-value {
+    font-size: 1rem;
+  }
+  .checkout--container .checkout-main .total-price-container .total-price-main .total-price-content .coupon {
+    font-size: 0.8rem;
+  }
+  .checkout--container .checkout-main .total-price-container .total-price-main .total-price-content small {
+    font-size: 0.6rem;
+  }
+}
+/*# sourceMappingURL=checkout.css.map */

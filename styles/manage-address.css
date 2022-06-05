@@ -1,0 +1,321 @@
+.dashboard--container {
+  -ms-grid-rows: 0.5fr 1fr;
+      grid-template-rows: 0.5fr 1fr;
+  border: none !important;
+}
+
+.dashboard--container .manage-address-wrapper {
+  width: 100%;
+  height: 10rem;
+}
+
+.dashboard--container .manage-address-wrapper .card-active {
+  height: 7rem;
+}
+
+.dashboard--container .manage-address-wrapper .manage-address-card {
+  padding-top: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  padding: 1.8rem;
+}
+
+.dashboard--container .manage-address-wrapper .manage-address-card .manage-address-content {
+  width: 100%;
+}
+
+.dashboard--container .manage-address-wrapper .manage-address-card .manage-address-content .manage-address-details {
+  margin-left: 2rem;
+}
+
+.dashboard--container .manage-address-wrapper .manage-address-card .manage-address-content .manage-address-details .manage-address--title {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.dashboard--container .manage-address-wrapper .manage-address-card .manage-address-content .manage-address-details p {
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.dashboard--container .manage-address-wrapper .manage-address-card .manage-address-content .manage-address-details .none-new-address {
+  display: none !important;
+}
+
+.dashboard--container .manage-address-wrapper .manage-address-card .manage-address-content .manage-address-details .new-address-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.dashboard--container .manage-address-wrapper .manage-address-card .manage-address-content .manage-address-details .new-address-wrapper span {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #0038A5;
+}
+
+.dashboard--container .manage-address-wrapper .manage-address-card .manage-address-content .manage-address-details .new-address-wrapper .new-address {
+  color: #0038A5;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dashboard--container .manage-address-wrapper .active-fields {
+  display: block !important;
+}
+
+.dashboard--container .manage-address-wrapper .checkout-input-container {
+  display: none;
+  background-color: #fff;
+  margin: 2rem 0 2rem 0;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.dashboard--container .manage-address-wrapper .checkout-input-container .checkout-input-main {
+  margin-left: 0;
+  padding: 2rem;
+}
+
+.dashboard--container .manage-address-wrapper .checkout-input-container .billing-address-header {
+  margin-bottom: 1rem;
+}
+
+.dashboard--container .manage-address-wrapper .checkout-input-container .billing-address-header h2 {
+  font-weight: 600;
+  color: #000000;
+}
+
+.dashboard--container .manage-address-wrapper .checkout-input-container .billing-address-input-content .billing-inputs {
+  width: 100%;
+}
+
+.dashboard--container .manage-address-wrapper .checkout-input-container .billing-address-input-content .billing-inputs .biinputs-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.dashboard--container .manage-address-wrapper .checkout-input-container .billing-address-input-content .billing-inputs .biinputs-container .binputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.dashboard--container .manage-address-wrapper .checkout-input-container .billing-address-input-content .billing-inputs .biinputs-container .binputs label {
+  color: #00000099;
+  font-weight: 505;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard--container .manage-address-wrapper .checkout-input-container .billing-address-input-content .billing-inputs .biinputs-container .binputs input {
+  width: 95%;
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 3px;
+  border: 1px solid #00000080;
+}
+
+.dashboard--container .manage-address-wrapper .checkout-input-container .billing-address-input-content .billing-inputs .billing-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard--container .manage-address-wrapper .checkout-input-container .billing-address-input-content .billing-inputs .billing-checkbox .checkbox {
+  margin-right: 1rem;
+  border: 1px solid #000000;
+  cursor: pointer;
+  width: 2rem;
+  height: 1.5rem;
+  margin-left: -4px;
+}
+
+.dashboard--container .manage-address-wrapper .checkout-input-container .billing-address-input-content .billing-inputs .billing-checkbox p {
+  color: #1A5CDD;
+  font-weight: 600;
+}
+
+.dashboard--container .manage-address-wrapper .checkout-input-container .billing-address-input-content .billing-inputs .shipping-header {
+  margin-top: 2rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.dashboard--container .manage-address-wrapper .checkout-input-container .billing-address-input-content .billing-inputs .btn-save {
+  margin: 1rem 0 3rem 0;
+  margin-bottom: 3rem;
+  background: #0038A5;
+  color: #fff;
+  width: 8.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 1040px) {
+  .dashboard--container .checkout-input-container .billing-address-header h2 {
+    font-size: 1.4rem;
+  }
+  .dashboard--container .checkout-input-container .billing-address-input-content .billing-inputs .billing-checkbox p {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 910px) {
+  .checkout-input-container .checkout-input-main {
+    margin-left: 1rem;
+  }
+  .checkout-input-container .billing-address-input-content .billing-inputs {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .dashboard--container {
+    -ms-grid-rows: 1fr 5.5fr;
+        grid-template-rows: 1fr 5.5fr;
+  }
+  .checkout-input-container {
+    margin: 0rem 0 2rem 0;
+  }
+  .checkout-input-container .checkout-input-main {
+    margin-left: 2rem;
+  }
+  .checkout-input-container .checkout-input-main .billing-address-header h2 {
+    font-size: 1.7rem;
+  }
+  .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .biinputs-container .binputs {
+    width: 100%;
+  }
+  .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .biinputs-container .binputs input {
+    width: 90%;
+  }
+  .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .biinputs-container .binputs label {
+    font-size: 1rem;
+  }
+  .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .billing-checkbox p {
+    font-size: 1rem;
+  }
+  .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs h3 {
+    font-size: 1.7rem;
+  }
+  .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .btn-save {
+    width: 10.5rem;
+    height: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .dashboard--container {
+    -ms-grid-rows: 1fr 4fr;
+        grid-template-rows: 1fr 4fr;
+  }
+  .dashboard--container .manage-address-wrapper {
+    margin-top: 4rem;
+  }
+  .dashboard--container .manage-address-wrapper .manage-address-card {
+    padding-bottom: 0;
+    border-radius: 0;
+    padding: 1rem;
+    margin-bottom: 0;
+  }
+  .dashboard--container .manage-address-wrapper .manage-address-content {
+    width: 90%;
+  }
+  .dashboard--container .manage-address-wrapper .manage-address-content .manage-address-details {
+    margin-left: 0 !important;
+  }
+  .dashboard--container .manage-address-wrapper .manage-address-content .manage-address-details .new-address-wrapper {
+    margin-bottom: 2rem;
+  }
+  .dashboard--container .checkout-input-container {
+    width: 100%;
+    border-radius: 0 !important;
+    margin: 0 !important;
+  }
+  .dashboard--container .checkout-input-container .checkout-input-main {
+    margin-left: 0;
+    padding: 1rem !important;
+  }
+  .dashboard--container .checkout-input-container .checkout-input-main .billing-address-header h2 {
+    font-size: 1.3rem;
+  }
+  .dashboard--container .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs {
+    width: 100%;
+  }
+  .dashboard--container .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .biinputs-container .binputs input {
+    width: 98%;
+  }
+  .dashboard--container .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .billing-checkbox .checkbox {
+    height: 1.3rem;
+    margin-right: 0.5rem;
+  }
+  .dashboard--container .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .billing-checkbox p {
+    font-size: 0.9rem;
+  }
+  .dashboard--container .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs h3 {
+    font-size: 1.3rem;
+  }
+  .dashboard--container .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .btn-save {
+    width: 8rem;
+    height: 2.8rem;
+  }
+}
+
+@media only screen and (max-width: 386px) {
+  .manage-address-wrapper .manage-address-card .manage-address-content .manage-address-details p {
+    font-size: 0.8rem;
+  }
+  .checkout-input-container .checkout-input-main .billing-address-header h2 {
+    font-size: 1.1rem;
+  }
+  .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .biinputs-container .binputs label {
+    font-size: 0.8rem;
+  }
+  .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .billing-checkbox p {
+    font-size: 0.7rem;
+  }
+  .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs h3 {
+    font-size: 1.1rem;
+  }
+  .checkout-input-container .checkout-input-main .billing-address-input-content .billing-inputs .btn-save {
+    width: 7rem;
+    height: 2.5rem;
+  }
+}
+/*# sourceMappingURL=manage-address.css.map */

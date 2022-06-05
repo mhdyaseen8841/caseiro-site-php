@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600&display=swap');
+
+$light-pink:#c44786;
+$light-orange: #e55c5b;
+$muted: #eeeeee;
+$black: #0c0c0c;
+$main-bg: rgb(238, 238 , 238);
+$gray: #8d8d8d;
+$gradient-primary: linear-gradient(180deg, #C44786 0%, #E55C5B 100%);
+
+@font-face {
+    font-family: 'primary';
+    src: url('assets/fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf') format("truetype");
+}
+
+.seller--page{
+    background: $main-bg;
+    padding: 8rem 12%;
+    display: grid;
+    grid-template-areas: 'crump crump''banner banner''navigation cards';
+    grid-template-columns: 15rem auto;
+    grid-column-gap: 3rem;
+    grid-row-gap: 1rem;
+    .bread-crump{
+        grid-area: crump;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: max-content;
+        li{
+            display: flex;
+            align-items: center;
+            opacity: 0.7;
+            a{
+                color: #0c0c0c;
+                text-decoration: none;
+            }
+            &::after{
+                content: '>';
+                margin: 0 1rem ;
+            }
+            &:last-child{
+                opacity: 1;
+                &::after{
+                    content: ''
+                }
+            }
+        }
+    }
+    .banner-wrapper{
+        grid-area: banner;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.2);
+        padding: 1rem;
+        background: #fff;
+    }
+    .seller-banner{
+        width: 100%;
+        height: 10rem;
+        object-fit: cover;
+        object-position: center;
+    }
+    .seller--title{
+        text-transform: uppercase;
+        margin-top: 1rem;
+    }
+    .seller--navigation-wrapper{
+        grid-area: navigation;
+        width: 100%;
+        position: relative;
+    }
+    .seller--navigation{
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.2);
+        background: #fff;
+        padding: 1rem;
+        position: sticky;
+        top: 8rem;
+        left: 0;
+    }
+    .nav--title{
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1rem 0 2rem 0;
+    }
+    .filter{
+        list-style: none;
+        padding: 0.5rem 0;
+    }
+    .filter-wrapper{
+        margin-bottom: 1rem;
+        span{
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+    }
+    .filter--checkbox{
+        margin-right: 0.5rem;
+        cursor: pointer;
+    }
+    .qnty{
+        color: $gray;
+    }
+
+    .sellers-card--wrapper{
+        grid-area: cards;
+        display: flex;
+        flex-wrap: wrap;
+        height: max-content;
+    }
+    .btn-filter{
+        display: none;
+    }
+    .close-filter{
+        display: none;
+    }
+    .seller-card{
+        width: calc(100%/4 - 2rem);
+        margin: 1rem;
+        padding: 0.5rem;
+        box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.2);
+        background: #fff;
+        border-radius: 10px;
+    }
+    .seller--image{
+        border-radius: 10px;
+        border: 1px solid rgba(0,0,0,0.4);
+        width: 100%;
+        height: calc(100vw / 12);
+        object-fit: cover;
+        object-position: center;
+
+    }
+    .rating-wrapper{
+        display: flex;
+        color:  #FFCA63;
+    }
+    .card--title{
+        font-size: 1rem;
+    }
+    .categories-container{
+        display: flex;
+    }
+    .category-wrapper{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.2);
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        display: inline;
+        margin-top: 1rem;
+    }
+    .category{
+        width: 1.5rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 1360px){
+    .seller--page{
+        padding: 8rem 5%;
+        grid-column-gap: 1rem;
+    }
+}
+@media only screen and (max-width: 1110px) {
+    .seller--page{
+        grid-template-columns: 13rem auto;
+        .seller-card{
+            width: calc(100%/2 - 2rem);
+            margin: 1rem;
+        }
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .seller--page{
+        grid-template-areas: 'banner''cards';
+        grid-template-columns: 1fr;
+        padding: 5rem 1rem;
+        .bread-crump{
+            display: none;
+        }
+        .btn-filter{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 1rem;
+            font-size: 3rem;
+            background: $gradient-primary;
+            border-radius: 50%;
+            border: none;
+            color: #fff;
+            z-index: 1000;
+            display: block;
+            font-size: 1.6rem;
+        }
+        .seller-banner{
+            height: 10rem;
+        }
+        .seller--title{
+            font-size: 1.2rem;
+        }
+        .seller--navigation-wrapper{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: #fff;
+            z-index: 10000;
+            overflow-y: scroll;
+            display: none;
+            opacity: 0;
+        }
+        .close-filter{
+            margin: 1rem;
+            display: block;
+        }
+        .nav--title{
+            padding: 0;
+            padding-bottom: 1rem;
+            text-align: left;
+        }
+        .nav-divider{
+            margin: 1rem 0;
+            opacity: 0.5;
+        }
+        .seller--navigation{
+            box-shadow: none;
+        }
+
+        .sellers-card--wrapper{
+            justify-content: space-between;
+        }
+        .seller-card{
+            width: calc(100%/2 - 0.5rem);
+            margin: 1rem 0;
+        }
+        .seller--image{
+            height: calc(100vw / 3)
+        }
+    }
+}
+@media only screen and (max-width:460px) {
+    .seller--page{
+        .card--title{
+            font-size: 14px;
+        }
+        .star{
+            font-size: 13px;
+        }
+        .rating-wrapper{
+            margin: 0.5rem 0;
+        }
+        .category{
+            width: 1rem;
+        }
+        .nav--title{
+            font-size: 1rem;
+        }
+        .filter{
+            span{
+                font-size: 14px;
+            }
+        }
+        .category-wrapper{
+            width: 1.3rem;
+            height: 1.3rem;
+        }
+        .seller-banner{
+            height: 10rem;
+        }
+    }
+}

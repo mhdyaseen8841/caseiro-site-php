@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <link rel="stylesheet" type="text/css" href="styles/product-page.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/order-preview.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Caseiro products</title>
+</head>
+
+<body>
+    <header>
+        <div class="ad">
+
+        </div>
+        <div class="head">
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <ul id="category-list">
+                <li>
+                    <a class="category category--active" href="/sellers.html">Art</a>
+                </li>
+                <li>
+                    <a class="category" href="/sellers.html">Food</a>
+                </li>
+                <li>
+                    <a class="category" href="/sellers.html">Fashion</a>
+                </li>
+                <li>
+                    <a class="category" href="/sellers.html">Gift</a>
+                </li>
+                <li>
+                    <a class="category" href="/sellers.html">Beauty</a>
+                </li>
+            </ul>
+            <a href="/" class="logo">
+                <img src="assets/logo.png" class="logo" alt="">
+            </a>
+            <ul id="core-list">
+                <li>
+                    <a class="category core-rm" href="#">About</a>
+                </li>
+                <li>
+                    <a class="category core-rm" href="#">عرب</a>
+                </li>
+                <li class="category category-icon search-icon-wrapper" onclick="openSearch()">
+                    <i class="material-icons search-icon--link">search</i>
+                </li>
+                <li class="category category-icon">
+                    <a href="/profile.html" class="material-icons">person_outline</a>
+                </li>
+                <li class="category category-icon">
+                    <a href="/cart.html" class="material-icons-outlined">shopping_bag</a>
+                </li>
+            </ul>
+        </div>
+        <form class="search-container">
+            <div class="search-wrapper">
+                <i class="material-icons search-icon">search</i>
+                <input type="search" name="search" placeholder="Search here..." id="search-input" class="search-input">
+                <button type="submit" class="btn-search">Search</button>
+                <i class="material-icons-outlined close-icon" onclick="closeSearch()">close</i>
+            </div>
+        </form>
+
+        <ul class="mobile-menu">
+            <li>
+                <a class="menu--item" href="#">Art</a>
+            </li>
+            <li>
+                <a class="menu--item" href="#">Food</a>
+            </li>
+            <li>
+                <a class="menu--item" href="#">Fashion</a>
+            </li>
+            <li>
+                <a class="menu--item" href="#">Gift</a>
+            </li>
+            <li>
+                <a class="menu--item" href="#">Beauty</a>
+            </li>
+            <li>
+                <a class="menu--item" href="#">About</a>
+            </li>
+            <li>
+                <a class="menu--item" href="#">Support</a>
+            </li>
+            <li>
+				<a class="menu--item" href="#">Seller Login</a>
+			</li>
+        </ul>
+    </header>
+
+    <main class="order-preview-container">
+        <div class="order-preview-wrapper">
+            <ul class="bread-crump">
+                <li>Home</li>
+                <span class="material-symbols-outlined">
+                    arrow_right
+                    </span>
+                <li>sellers</li>
+                <span class="material-symbols-outlined">
+                    arrow_right
+                    </span>
+                <li>productpage</li>
+            </ul>
+            <div class="address-wrapper">
+                <h2 class="preview-title">Shipping Address</h2>
+                <hr class="divider-line">
+                <ul class="address">
+                    <li>
+                        <span class="material-icons-outlined address-icon">home</span>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ut!</span>
+                    </li>
+                    <li>
+                        <span class="material-icons-outlined address-icon">my_location</span>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ut!</span>
+                    </li>
+                    <li>
+                        <span class="material-icons-outlined address-icon">call</span>
+                        <span>+97166684946</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="items-detail-wrapper">
+                <div class="item-details--header">
+                    <h2 class="preview-title">Sub Order <span class="order-id">#AE-029038</span></h2>
+                    <div class="status-wrapper confirmed-order">
+                        <i class="material-icons-outlined">done</i>
+                        <span>Confirmed</span>
+                    </div>
+                </div>
+
+                <!-- <div class="item-details">
+
+                </div> -->
+                <table class="item-details" cellspacing="0" cellpadding="0">
+                    <thead>
+                        <tr>
+                            <th class="table-header-1">Item</th>
+                            <th>QTY</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="/assets/images/perfume2.webp" class="item-thumbnail" alt="">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, numquam!
+                            </td>
+                            <td>x10</td>
+                            <td>230</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="/assets/images/perfume3.webp" class="item-thumbnail" alt="">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, numquam!
+                            </td>
+                            <td>x10</td>
+                            <td>230</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="/assets/images/perfume4.webp" class="item-thumbnail" alt="">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, numquam!
+                            </td>
+                            <td>x10</td>
+                            <td>230</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="/assets/images/perfume5.webp" class="item-thumbnail" alt="">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, numquam!
+                            </td>
+                            <td>x10</td>
+                            <td>230</td>
+                        </tr>
+                        <tfoot>
+                            <tr>
+                                <td>
+                                </td>
+                                <td>Sub Total</td>
+                                <td>230</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td>Discount</td>
+                                <td>230</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td>Delivery</td>
+                                <td>230</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td>Tax</td>
+                                <td>230</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td>Total</td>
+                                <td>230</td>
+                            </tr>
+                        </tfoot>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="price-wrapper">
+                <h2 class="preview-title">Order Summary</h2>
+                <hr class="divider-line">
+                <ul class="price-list">
+                    <li>
+                        <span class="list-name">Sub Total</span>
+                        <span>AED 40.50</span>
+                    </li>
+                    <li>
+                        <span class="list-name">Item Discount</span>
+                        <span>AED 40.50</span>
+                    </li>
+                    <li>
+                        <span class="list-name">Delivery</span>
+                        <span>AED 40.50</span>
+                    </li>
+                    <li>
+                        <span class="list-name">Tax</span>
+                        <span>AED 40.50</span>
+                    </li>
+                    <li class="total-wrapper">
+                        <span class="list-name">Total</span>
+                        <span>AED 40.50</span>
+                    </li>
+                </ul>
+                <div class="status-wrapper confirmed-order">
+                    <i class="material-icons-outlined">done</i>
+                    <span>Confirmed</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <div class="popup-bg">
+        <div class="popup-container">
+            <img src="/assets/icons/success-delivery-box.png" alt="">
+            <h1 class="popup-heading">Order Placed Successfully</h1>
+            <p class="popup-description">
+                Your order #AE-029038 has been placed successfully and invoice send to registered email address
+            </p>
+            <i class="material-icons-outlined close-icon" onclick="closeOrderStatus()">close</i>
+        </div>
+    </div>
+
+
+    <footer>
+        <img src="assets/images/footer logo.png" class="footer-logo" alt="">
+        <div class="help-container">
+            <h3 class="footer--title">Help</h3>
+            <ul class="footer-links">
+                <li>
+                    <a href="#" class="footer--link">Help Center</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Contact Us</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Return & Exchange</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Rewards</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Refer a Friend</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Shipping Policy</a>
+                </li>
+            </ul>
+        </div>
+        <div class="shop-container">
+            <h3 class="footer--title">Shop</h3>
+            <ul class="footer-links">
+                <li>
+                    <a href="#" class="footer--link">Men’s</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Women’s</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Kid’s</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Accessories</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Sale</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Students</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">E-gift Codes</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Corporate orders</a>
+                </li>
+            </ul>
+        </div>
+        <div class="company-container">
+            <h3 class="footer--title">Company</h3>
+            <ul class="footer-links">
+                <li>
+                    <a href="#" class="footer--link">About Us</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Careers</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Become a Retailer</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Store Locator</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Ambassadors</a>
+                </li>
+                <li>
+                    <a href="#" class="footer--link">Aﬃliate Program</a>
+                </li>
+            </ul>
+        </div>
+        <p class="copyright">
+            &copy;caseiro. All Rights Reserved. Privacy Policy & Copyright Notice.
+        </p>
+    </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+<script src="scripts/scripts.js"></script>
+
+</html>

@@ -1,0 +1,809 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600&display=swap');
+
+$light-pink:#c44786;
+$light-orange: #e55c5b;
+$muted: #eeeeee;
+$black: #0c0c0c;
+$main-bg: rgb(238, 238, 238);
+$gray: #8d8d8d;
+$gradient-primary: linear-gradient(180deg, #C44786 0%, #E55C5B 100%);
+
+@font-face {
+    font-family: 'primary';
+    src: url('assets/fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf') format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    color: $black;
+
+}
+
+.checkout--container {
+    background-color: $main-bg;
+    display: flex;
+    justify-content: center;
+    padding: 0 12%;
+
+    .checkout-main {
+        margin-top: 6rem;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+
+        .checkout-input-container {
+            background-color: #fff;
+            margin: 1rem 0 2rem 0;
+            width: 65%;
+
+            .checkout-input-main {
+                padding: 2rem;
+            }
+
+            .checkout-header {
+                display: flex;
+                margin-bottom: 2rem;
+                cursor: pointer;
+
+                p {
+                    padding-right: 0.5rem;
+                    color: #00000099;
+                    font-weight: 600;
+                    font-size: 0.9rem;
+                }
+
+                .checkout {
+                    color: #FA575A;
+                }
+
+                span {
+                    padding-right: 0.5rem;
+                    color: #00000099;
+                    margin-top: 1px;
+                    font-size: 1rem;
+                    font-weight: 100;
+
+                }
+            }
+
+            .billing-address-header {
+                margin-bottom: 1rem;
+
+                h2 {
+                    font-weight: 600;
+                    color: #000000;
+
+                }
+
+                a {
+                    color: #3177FF;
+                    font-weight: 600;
+                    cursor: pointer;
+                    text-decoration: none;
+                }
+
+                .login-section {
+                    display: flex;
+                    margin-bottom: 0.5rem;
+
+                    .login-return-customer {
+                        padding-right: 1rem;
+                        font-weight: 500;
+                    }
+                }
+
+                .signup-section {
+                    display: flex;
+                    margin-bottom: 1rem;
+
+                    .signup-or {
+                        padding-right: 1rem;
+                    }
+                }
+            }
+
+            .billing-address-input-content {
+                .billing-inputs {
+                    // width: 100%;
+
+                    .biinputs-container {
+                        display: flex;
+                        margin-bottom: 1rem;
+
+                        .binputs {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+
+                            label {
+                                color: #00000099;
+                                font-weight: 505;
+                                font-size: 0.9rem;
+                                margin-bottom: 0.5rem;
+                            }
+
+                            input {
+                                padding: 0.5rem;
+                                width: 95%;
+                                outline: none;
+                                padding-left: 0.5rem;
+                                border-radius: 3px;
+                                border: 1px solid #00000080;
+                            }
+
+                        }
+
+                    }
+
+                    .billing-checkbox {
+                        display: flex;
+                        margin-top: 3rem;
+                        align-items: center;
+                        margin-bottom: 2rem;
+
+                        .checkbox {
+                            margin-right: 1rem;
+                            border: 1px solid #000000;
+                            cursor: pointer;
+                            width: 2rem;
+                            height: 1.5rem;
+                            margin-left: -4px;
+                        }
+
+                        p {
+                            color: #1A5CDD;
+                            font-weight: 600;
+                        }
+                    }
+
+                    .shipping-header {
+                        margin-top: 2rem;
+                        margin: 1rem 0 1rem 0;
+                    }
+
+                    .btn-save {
+                        margin: 1rem 0 3rem 0;
+                        margin-bottom: 3rem;
+                        background: $gradient-primary;
+                        color: #fff;
+                        width: 8.5rem;
+                        height: 2.5rem;
+                        cursor: pointer;
+                        border: none;
+                        border-radius: 10px;
+                        font-weight: 600;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        .total-price-container {
+            background-color: #fff;
+            margin: 1rem 0 2rem 1rem;
+            width: 35%;
+            height: 37rem;
+            border-radius: 10px;
+
+            .total-price-main {
+                padding: 1rem;
+                width: 100%;
+
+                h3 {
+                    font-weight: 700;
+                    color: #000000;
+                    padding-bottom: 1rem;
+                    border-bottom: 0.1px solid #00000033;
+                    width: 90%;
+
+                    margin-bottom: 1rem;
+                }
+
+                .total-price-content {
+                    .border {
+                        border: 1px solid #00000033;
+                        margin-bottom: 2rem;
+                        width: 90%;
+                    }
+
+                    .total-inputs {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 2rem 0 2rem 0;
+
+                        .total-inputs-value {
+                            color: #009217;
+                            font-weight: 600;
+                        }
+
+                        .total-inputs-key {
+                            color: #000000B2;
+                            font-weight: 600;
+                        }
+
+                        .total-inputs-reminder {
+                            color: #FF5D50;
+                            font-weight: 400;
+                            text-decoration: none;
+                        }
+
+                        .total-inputs-total-key {
+                            font-weight: 600;
+                            font-size: 1.1rem;
+                        }
+
+                        .total-inputs-total-value {
+                            font-weight: 600;
+                            color: #009217;
+                            font-size: 1.1rem;
+                        }
+                    }
+
+                    .coupon {
+                        font-weight: 600;
+                        color: #000000B2;
+                    }
+
+                    small {
+                        font-weight: 400;
+                        color: #000000;
+
+                    }
+
+                    .coupon-code-container {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        border: 1px solid #00000080;
+                        height: 2rem;
+                        margin: 0.5rem 0 0 0;
+                        width: 100%;
+                        border-radius: 5px;
+                        margin-top: 1rem;
+
+                        .arrow {
+                            position: absolute;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                        }
+
+                        .coupon-code {
+                            padding: 0 0.5rem 0 0.5rem;
+                            border: none;
+                            outline: none;
+                            width: 100%;
+
+                        }
+
+                        .material-icons-outlined {
+                            background: $gradient-primary;
+                            color: #fff;
+                            height: 1.9rem;
+                            border-radius: 5px;
+                            width: 3rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center
+                        }
+
+                        ::placeholder {
+                            color: #00000066;
+
+                        }
+                    }
+
+                    .button {
+                        display: flex;
+                        justify-content: flex-end;
+
+                        button {
+                            background: $gradient-primary;
+                            color: #fff;
+                            border-radius: 3px;
+                            border: none;
+                            height: 2rem;
+                            width: 8rem;
+                            cursor: pointer;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1370px) {
+    .checkout--container {
+        padding: 0 5%;
+    }
+}
+
+@media only screen and (max-width:1020px) {
+    .checkout--container {
+
+        .checkout-main {
+            .checkout-input-container {
+                .checkout-header {
+                    p {
+                        font-size: 0.8rem;
+                    }
+
+                    span {
+                        font-size: 1rem;
+                        margin-top: 1px;
+                    }
+                }
+
+                .billing-address-header {
+                    .login-section {
+                        .login-return-customer {
+                            font-size: 0.9rem;
+                        }
+
+                        .signup-section {
+                            .signup-or {
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+
+                    h2 {
+                        font-size: 1.4rem;
+                    }
+
+                    a {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:910px) {
+    .checkout--container {
+
+        .checkout-main {
+            .checkout-input-container {
+
+                .billing-address-input-content {
+                    .billing-inputs {
+                        .billing-checkbox {
+                            p {
+                                font-size: 0.9rem;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .total-price-container {
+                .total-price-main {
+                    h3 {
+                        font-size: 1.1rem;
+                    }
+
+                    .total-price-content {
+                        .total-inputs {
+                            .total-inputs-key {
+                                font-size: 0.9rem;
+                            }
+
+                            .total-inputs-value {
+                                font-size: 0.9rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 860px) {
+    .checkout--container {
+        .checkout-main {
+            .total-price-container {
+                .total-price-main {
+
+                    .total-price-content {
+                        .total-inputs {
+                            .total-inputs-key {
+                                font-size: 0.8rem;
+                            }
+
+                            .total-inputs-value {
+                                font-size: 0.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .checkout--container {
+        .checkout-main {
+            flex-direction: column;
+            align-items: center;
+
+            .checkout-input-container {
+                width: 100%;
+
+                .checkout-input-main {
+
+                    .checkout-header {
+                        p {
+                            font-size: 0.8rem;
+                        }
+                    }
+
+                    .billing-address-header {
+                        a {
+                            font-size: 1rem;
+                        }
+
+                        .login-section {
+                            .login-return-customer {
+                                font-size: 1rem;
+                            }
+                        }
+
+                        .signup-section {
+                            .signup-or {
+                                font-size: 1rem;
+                            }
+                        }
+
+                        h2 {
+                            font-size: 1.7rem;
+                        }
+                    }
+
+                    .billing-address-input-content {
+                        .billing-inputs {
+                            .biinputs-container {
+                                .binputs {
+                                    width: 100%;
+
+                                    input {
+                                        width: 90%;
+                                    }
+
+                                    label {
+                                        font-size: 1rem;
+                                    }
+                                }
+
+                            }
+
+                            .billing-checkbox {
+                                p {
+                                    font-size: 1rem;
+                                }
+                            }
+
+                            h3 {
+                                font-size: 1.7rem;
+                            }
+
+                            .btn-save {
+                                width: 10.5rem;
+                                height: 3.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .total-price-container {
+                width: 20rem;
+                height: 35rem;
+                align-self: flex-end;
+
+                .total-price-main {
+                    h3 {
+                        font-size: 1.3rem;
+                    }
+
+                    .total-price-content {
+                        .total-inputs {
+                            margin: 2rem 0 1rem 0;
+
+                            .total-inputs-key {
+                                font-size: 1rem;
+                            }
+
+                            .total-inputs-value {
+                                font-size: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .checkout--container {
+        .checkout-main {
+            .checkout-input-container {
+                .checkout-input-main {
+                    padding: 1rem;
+
+                    .checkout-header {
+                        p {
+                            font-size: 0.7rem;
+                        }
+                    }
+
+                    .billing-address-header {
+                        a {
+                            font-size: 0.9rem;
+                        }
+
+                        .login-section {
+                            .login-return-customer {
+                                font-size: 0.9rem;
+                            }
+                        }
+
+                        .signup-section {
+                            .signup-or {
+                                font-size: 0.9rem;
+                            }
+                        }
+
+                        h2 {
+                            font-size: 1.4rem;
+                        }
+                    }
+
+                    .billing-address-input-content {
+                        .billing-inputs {
+                            .biinputs-container {
+                                .binputs {
+                                    input {
+                                        width: 98%;
+                                    }
+
+                                    label {
+                                        font-size: 0.9rem;
+                                    }
+                                }
+
+                            }
+
+                            .billing-checkbox {
+                                .checkbox {
+                                    height: 1rem;
+                                }
+
+                                p {
+                                    font-size: 0.8rem;
+                                }
+                            }
+
+                            h3 {
+                                font-size: 1.4rem;
+                            }
+
+                            .btn-save {
+                                width: 9.5rem;
+                                height: 3rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .checkout--container {
+        padding: 0;
+
+        .checkout-main {
+            width: 100%;
+            margin-top: 2rem;
+
+            .checkout-input-container {
+                width: 100%;
+                margin: 2rem 0 0rem 0;
+                border-bottom: 1px solid #000;
+
+                .checkout-input-main {
+
+                    .checkout-header {
+                        p {
+                            font-size: 0.7rem;
+                        }
+
+                        span {
+                            font-size: 0.8rem;
+                        }
+                    }
+
+                    .billing-address-header {
+                        a {
+                            font-size: 0.8rem;
+                        }
+
+                        .login-section {
+                            .login-return-customer {
+                                font-size: 0.8rem;
+                            }
+                        }
+
+                        .signup-section {
+                            .signup-or {
+                                font-size: 0.8rem;
+                            }
+                        }
+
+                        h2 {
+                            font-size: 1.3rem;
+                        }
+                    }
+
+                    .billing-address-input-content {
+                        .billing-inputs {
+                            .billing-checkbox {
+                                p {
+                                    font-size: 0.8rem;
+                                }
+                            }
+
+                            h3 {
+                                font-size: 1.3rem;
+                            }
+
+                            .btn-save {
+                                width: 8rem;
+                                height: 2.8rem;
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .total-price-container {
+                margin: 0;
+                width: 100%;
+                align-self: center;
+                margin-bottom: 2rem;
+                border-radius: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:420px) {
+    .checkout--container {
+        .checkout-main {
+            .checkout-input-container {
+                .checkout-input-main {
+                    .checkout-header {
+                        margin-bottom: 1rem;
+
+                        p {
+                            font-size: 0.6rem;
+                        }
+                    }
+
+                    .billing-address-header {
+                        a {
+                            font-size: 0.7rem;
+                        }
+
+                        .login-section {
+                            .login-return-customer {
+                                font-size: 0.7rem;
+                            }
+                        }
+
+                        .signup-section {
+                            .signup-or {
+                                font-size: 0.7rem;
+                            }
+                        }
+
+                        h2 {
+                            font-size: 1.1rem;
+                        }
+                    }
+
+                    .billing-address-input-content {
+                        .billing-inputs {
+                            .biinputs-container {
+                                .binputs {
+
+                                    label {
+                                        font-size: 0.8rem;
+                                    }
+                                }
+
+                            }
+
+                            .billing-checkbox {
+
+                                p {
+                                    font-size: 0.7rem;
+                                }
+                            }
+
+                            h3 {
+                                font-size: 1.1rem;
+                            }
+
+                            .btn-save {
+                                width: 7rem;
+                                height: 2.5rem;
+                                font-size: 0.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .total-price-container {
+                height: 33rem;
+
+                .total-price-main {
+                    h3 {
+                        font-size: 1rem;
+                    }
+
+                    .total-price-content {
+                        .total-inputs {
+                            .total-inputs-key {
+                                font-size: 0.8rem;
+                            }
+
+                            .total-inputs-value {
+                                font-size: 0.8rem;
+                            }
+
+                            .total-inputs-reminder {
+                                font-size: 0.8rem;
+                            }
+
+                            .total-inputs-total-key {
+                                font-size: 1rem;
+                            }
+
+                            .total-inputs-total-value {
+                                font-size: 1rem;
+                            }
+                        }
+
+                        .coupon {
+                            font-size: 0.8rem;
+                        }
+
+                        small {
+                            font-size: 0.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

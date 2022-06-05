@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/checkout.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Caseiro Checkout</title>
+</head>
+
+<body>
+    <header>
+        <div class="ad">
+
+        </div>
+        <div class="head">
+			<div class="menu-icon" onclick="toggleMenu()">
+				<div>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+            <ul id="category-list">
+                <li>
+                    <a class="category category--active" href="/sellers.html">Art</a>
+                </li>
+                <li>
+                    <a class="category" href="/sellers.html">Food</a>
+                </li>
+                <li>
+                    <a class="category" href="/sellers.html">Fashion</a>
+                </li>
+                <li>
+                    <a class="category" href="/sellers.html">Gift</a>
+                </li>
+                <li>
+                    <a class="category" href="/sellers.html">Beauty</a>
+                </li>
+            </ul>
+			<a href="/" class="logo">
+				<img src="assets/logo.png" class="logo" alt="">
+			</a>
+			<ul id="core-list">
+                <li>
+                    <a class="category core-rm" href="#">About</a>
+                </li>
+                <li>
+                    <a class="category core-rm" href="#">عرب</a>
+                </li>
+                <li class="category category-icon search-icon-wrapper" onclick="openSearch()">
+                    <i class="material-icons search-icon--link">search</i>
+                </li> 
+                <li class="category category-icon">
+                    <a href="/profile.html" class="material-icons">person_outline</a>
+                </li>
+                <li class="category category-icon">
+                    <a href="/cart.html" class="material-icons-outlined">shopping_bag</a>
+                </li>
+            </ul>
+        </div>
+		<form class="search-container">
+			<div class="search-wrapper">
+				<i class="material-icons search-icon">search</i>
+				<input type="search" name="search" placeholder="Search here..." id="search-input" class="search-input">
+				<button type="submit" class="btn-search">Search</button>
+				<i class="material-icons-outlined close-icon" onclick="closeSearch()">close</i>
+			</div>
+		</form>
+
+		<ul class="mobile-menu">
+			<li>
+				<a class="menu--item" href="#">Art</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">Food</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">Fashion</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">Gift</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">Beauty</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">About</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">عرب</a>
+			</li>
+            <li>
+				<a class="menu--item" href="#">Seller Login</a>
+			</li>
+		</ul>
+    </header>
+
+    <div class="checkout--container">
+        <div class="checkout-main">
+            <div class="checkout-input-container">
+                <div class="checkout-input-main">
+                    <div class="checkout-header">
+                        <p>Shopping Cart</p>
+                        <span class="material-symbols-outlined">
+                            arrow_right
+                            </span>
+                        <p class="checkout">Checkout</p>
+                        <span class="material-symbols-outlined">
+                            arrow_right
+                            </span>
+                        <p>Order Complete</p>
+                    </div>
+                    <div class="billing-address-header">
+                        <div class="login-section">
+                            <p class="login-return-customer">Returning customer ?</p><a href="/login.html" name="login">Login</a>
+                        </div>
+                        <div class="signup-section">
+                            <p class="signup-or">or</p> <a href="/signup.html" name="signup">Create An Account</a>
+
+                        </div>
+                        <h2>Billing Address</h2>
+                    </div>
+                    <div class="billing-address-input-content">
+                        <div class="billing-inputs">
+                            <form action="">
+                                <div class="biinputs-container">
+                                    <div class="binputs">
+                                        <label>First name</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="binputs">
+                                        <label>Last name</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="biinputs-container">
+                                    <div class="binputs">
+                                        <label>Emirates / State</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="binputs">
+                                        <label>City</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="biinputs-container">
+                                    <div class="binputs">
+                                        <label>Flat number</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="binputs">
+                                        <label>Building name</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="biinputs-container">
+                                    <div class="binputs">
+                                        <label>Pin</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="binputs">
+                                        <label>Phone number</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+
+                                <div class="billing-checkbox">
+                                    <input class="checkbox" type="checkbox" value="">
+                                    <p>Will your shipping and billing address same ?</p>
+                                </div>
+                            </form>
+                            <h3 class="shipping-header">Shipping Address</h3>
+                            <form action="">
+                                <div class="biinputs-container">
+                                    <div class="binputs">
+                                        <label>First name</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="binputs">
+                                        <label>Last name</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="biinputs-container">
+                                    <div class="binputs">
+                                        <label>Emirates / State</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="binputs">
+                                        <label>City</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="biinputs-container">
+                                    <div class="binputs">
+                                        <label>Flat number</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="binputs">
+                                        <label>Building name</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="biinputs-container">
+                                    <div class="binputs">
+                                        <label>Pin</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="binputs">
+                                        <label>Phone number</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                            </form>
+                            <button class="btn-save">
+                                Save Address
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="total-price-container">
+                <div class="total-price-main">
+                    <h3>Total Price</h3>
+                    <div class="total-price-content">
+                        <div class="total-inputs">
+                            <p class="total-inputs-key">SubTotal</p>
+                            <p class="total-inputs-value">AED 3000.00</p>
+                        </div>
+                        <div class="total-inputs">
+                            <p class="total-inputs-key">Shipping</p>
+                            <a href="/manage-address.html" class="total-inputs-reminder">add your address</a>
+                        </div>
+                        <div class="total-inputs">
+                            <p class="total-inputs-key">Discount</p>
+                            <p class="total-inputs-value">- AED 5.00</p>
+                        </div>
+                        <p class="coupon">COUPON</p>
+                        <small>Enter your coupon code if you have one</small>
+                        <div class="coupon-code-container">
+                            <input type="text" class="coupon-code" name="coupon" placeholder="Coupon Code" value="">
+                            <div class="arrow">
+                                <span class="material-icons-outlined">
+                                    trending_flat
+                                </span>
+                            </div>
+                        </div>
+                        <div class="total-inputs">
+                            <p class="total-inputs-key">Coupon Discount</p>
+                            <p class="total-inputs-value">- AED 50.00</p>
+                        </div>
+                        <div class="total-inputs">
+                            <p class="total-inputs-key">Tax</p>
+                            <p class="total-inputs-value">AED 65.00</p>
+                        </div>
+                        <div class="border"></div>
+                        <div class="total-inputs">
+                            <p class="total-inputs-total-key">TOTAL</p>
+                            <p class="total-inputs-total-value">AED 6500.00</p>
+                        </div>
+                        <div class="button">
+                            <button onClick="">PLACE ORDER</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <img src="assets/images/footer logo.png" class="footer-logo" alt="">
+    <div class="help-container">
+        <h3 class="footer--title">Help</h3>
+        <ul class="footer-links">
+            <li>
+                <a href="#" class="footer--link">Help Center</a>
+            </li>
+            <li>
+                <a href="#" class="footer--link">Contact Us</a>
+            </li>
+            <li>
+                <a href="#" class="footer--link">Return & Exchange</a>
+            </li>
+            <li>
+                <a href="#" class="footer--link">Rewards</a>
+            </li>
+            <li>
+                <a href="#" class="footer--link">Refer a Friend</a>
+            </li>
+            <li>
+                <a href="#" class="footer--link">Shipping Policy</a>
+            </li>
+        </ul>
+    </div>
+    <div class="shop-container">
+        <h3 class="footer--title">Shop</h3>
+        <ul class="footer-links">
+            <li>
+                <a href="#" class="footer--link">Men’s</a>
+            </li>
+            <li>
+                <a href="#" class="footer--link">Women’s</a>
+            </li>
+            <li>
+                <a href="#" class="footer--link">Kid’s</a>
+            </li>
+            <li>
+                <a href="#" class="footer--link">Accessories</a>
+            </li>
+            <li>
+                <a href="#" class="footer--link">Sale</a>
+            </li>
+            <li>
+                <a href="#" class="footer--link">Students</a>
+            </li>
+            <li>
+                <a href="#" class="footer--link">E-gift Codes</a>
+            </li>
+            <li>
+                <a href="#" class="footer--link">Corporate orders</a>
+            </li>
+        </ul>
+    </div>
+    <div class="company-container">
+        <h3 class="footer--title">Company</h3>
+        <ul class="footer-links">
+            <li>
+                <a href="#" class="footer--link">About Us</a>
+            </li>
+            <li>
+                <a href="#" class="footer--link">Careers</a>
+            </li>
+            <li>
+                <a href="#" class="footer--link">Become a Retailer</a>
+            </li>
+            <li>
+                <a href="#" class="footer--link">Store Locator</a>
+            </li>
+            <li>
+                <a href="#" class="footer--link">Ambassadors</a>
+            </li>
+            <li>
+                <a href="#" class="footer--link">Aﬃliate Program</a>
+            </li>
+        </ul>
+    </div>
+    <p class="copyright">
+        &copy;caseiro. All Rights Reserved. Privacy Policy & Copyright Notice.
+    </p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="scripts/scripts.js"></script>
+</html>

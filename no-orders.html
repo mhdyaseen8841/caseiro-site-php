@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/orders.styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <title>Caseiro OTP</title>
+</head>
+<body>
+    <header>
+        <div class="ad">
+
+        </div>
+        <div class="head">
+			<div class="menu-icon" onclick="toggleMenu()">
+				<div>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+            <ul id="category-list">
+                <li>
+                    <a class="category category--active" href="/sellers.html">Art</a>
+                </li>
+                <li>
+                    <a class="category" href="/sellers.html">Food</a>
+                </li>
+                <li>
+                    <a class="category" href="/sellers.html">Fashion</a>
+                </li>
+                <li>
+                    <a class="category" href="/sellers.html">Gift</a>
+                </li>
+                <li>
+                    <a class="category" href="/sellers.html">Beauty</a>
+                </li>
+            </ul>
+			<a href="/" class="logo">
+				<img src="assets/logo.png" class="logo" alt="">
+			</a>
+			<ul id="core-list">
+                <li>
+                    <a class="category core-rm" href="#">About</a>
+                </li>
+                <li>
+                    <a class="category core-rm" href="#">عرب</a>
+                </li>
+                <li class="category category-icon search-icon-wrapper" onclick="openSearch()">
+                    <i class="material-icons search-icon--link">search</i>
+                </li> 
+                <li class="category category-icon">
+                    <a href="/profile.html" class="material-icons">person_outline</a>
+                </li>
+                <li class="category category-icon">
+                    <a href="/cart.html" class="material-icons-outlined">shopping_bag</a>
+                </li>
+            </ul>
+        </div>
+		<form class="search-container">
+			<div class="search-wrapper">
+				<i class="material-icons search-icon">search</i>
+				<input type="search" name="search" placeholder="Search here..." id="search-input" class="search-input">
+				<button type="submit" class="btn-search">Search</button>
+				<i class="material-icons-outlined close-icon" onclick="closeSearch()">close</i>
+			</div>
+		</form>
+
+		<ul class="mobile-menu">
+			<li>
+				<a class="menu--item" href="#">Art</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">Food</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">Fashion</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">Gift</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">Beauty</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">About</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">عرب</a>
+			</li>
+            <li>
+				<a class="menu--item" href="#">Seller Login</a>
+			</li>
+		</ul>
+    </header>
+
+    <div class="empty-wrapper">
+        <div class="empty-container">
+            <img src="/assets/icons/no-orders.png" alt="" class="empty-icon">
+            <h1 class="empty--title">No Orders</h1>
+        </div>
+    </div>
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="scripts/scripts.js"></script>
+</html>

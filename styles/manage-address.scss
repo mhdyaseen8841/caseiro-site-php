@@ -1,0 +1,396 @@
+.dashboard--container {
+    grid-template-rows: 0.5fr 1fr;
+    border: none!important;
+.manage-address-wrapper {
+    width: 100%;
+    height: 10rem;
+
+    .card-active {
+        height: 7rem;
+    }
+
+    .manage-address-card {
+        padding-top: 1.3rem;
+        display: flex;
+        background: #fff;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        padding: 1.8rem;
+
+
+        .manage-address-content {
+            width: 100%;
+
+            .manage-address-details {
+                margin-left: 2rem;
+
+                .manage-address--title {
+                    font-weight: 700;
+                    font-size: 1.6rem;
+                }
+
+                p {
+                    margin-top: 1rem;
+                    font-weight: 500;
+                    font-size: 0.9rem;
+                }
+
+                .none-new-address {
+                    display: none !important;
+                }
+
+
+                .new-address-wrapper {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    span {
+                        cursor: pointer;
+                        font-size: 1.5rem;
+                        color: #0038A5;
+                    }
+
+                    .new-address {
+                        color: #0038A5;
+                        margin-top: 2rem;
+                        display: flex;
+                        justify-content: space-between;
+
+                    }
+                }
+            }
+        }
+    }
+
+
+.active-fields {
+    display: block !important;
+}
+
+.checkout-input-container {
+    display: none;
+    background-color: #fff;
+    margin: 2rem 0 2rem 0;
+    width: 100%;
+    border-radius: 10px;
+
+    .checkout-input-main {
+        margin-left: 0;
+        padding: 2rem ;
+
+    }
+
+    .billing-address-header {
+        margin-bottom: 1rem;
+
+        h2 {
+            font-weight: 600;
+            color: #000000;
+        }
+    }
+
+    .billing-address-input-content {
+        .billing-inputs {
+            width: 100%;
+
+            .biinputs-container {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 1rem;
+
+                .binputs {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    label {
+                        color: #00000099;
+                        font-weight: 505;
+                        font-size: 0.9rem;
+                        margin-bottom: 0.5rem;
+                    }
+
+                    input {
+                       
+                        width: 95%;
+                        outline: none;
+                        padding: 0.5rem;
+                        border-radius: 3px;
+                        border: 1px solid #00000080;
+                    }
+
+                }
+
+            }
+
+            .billing-checkbox {
+                display: flex;
+                margin-top: 3rem;
+                align-items: center;
+                margin-bottom: 2rem;
+
+                .checkbox {
+                    margin-right: 1rem;
+                    border: 1px solid #000000;
+                    cursor: pointer;
+                    width: 2rem;
+                    height: 1.5rem;
+                    margin-left: -4px;
+                }
+
+                p {
+                    color: #1A5CDD;
+                    font-weight: 600;
+                }
+            }
+
+            .shipping-header {
+                margin-top: 2rem;
+                margin: 1rem 0 1rem 0;
+            }
+
+            .btn-save {
+                margin: 1rem 0 3rem 0;
+                margin-bottom: 3rem;
+                background: #0038A5;
+                color: #fff;
+                width: 8.5rem;
+                height: 2.5rem;
+                cursor: pointer;
+                border: none;
+                border-radius: 10px;
+                font-weight: 600;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+}
+@media only screen and (max-width:1040px) {
+    .checkout-input-container {
+        .billing-address-header {
+
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+
+        .billing-address-input-content {
+            .billing-inputs {
+
+                .billing-checkbox {
+                    p {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+
+@media only screen and (max-width:910px) {
+    .checkout-input-container {
+        .checkout-input-main {
+            margin-left: 1rem;
+        }
+
+        .billing-address-input-content {
+            .billing-inputs {
+                width: 95%;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width:800px) {
+    .dashboard--container {
+        grid-template-rows: 1fr 5.5fr;
+    }
+
+    .checkout-input-container {
+        margin: 0rem 0 2rem 0;
+
+        .checkout-input-main {
+            margin-left: 2rem;
+
+            .billing-address-header {
+                h2 {
+                    font-size: 1.7rem;
+                }
+            }
+
+            .billing-address-input-content {
+                .billing-inputs {
+                    .biinputs-container {
+                        .binputs {
+                            width: 100%;
+
+                            input {
+                                width: 90%;
+                            }
+
+                            label {
+                                font-size: 1rem;
+                            }
+                        }
+
+                    }
+
+                    .billing-checkbox {
+                        p {
+                            font-size: 1rem;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 1.7rem;
+                    }
+
+                    .btn-save {
+                        width: 10.5rem;
+                        height: 3.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .dashboard--container {
+        grid-template-rows: 1fr 4fr;
+    
+
+    .manage-address-wrapper {
+        margin-top: 4rem;
+
+        .manage-address-card {
+            padding-bottom: 0;
+            border-radius: 0;
+            padding: 1rem ;
+            margin-bottom: 0;
+        }
+
+        .manage-address-content {
+                    width: 90%;
+
+            .manage-address-details {
+                margin-left: 0 !important;
+
+                .new-address-wrapper {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+
+    .checkout-input-container {
+        width: 100%;
+        border-radius: 0!important  ;
+        margin: 0!important;
+       
+        .checkout-input-main {
+            margin-left: 0;
+            padding: 1rem!important;
+            .billing-address-header {
+
+                h2 {
+                    font-size: 1.3rem;
+                }
+            }
+
+            .billing-address-input-content {
+                .billing-inputs {
+                    width: 100%;
+                    .biinputs-container{
+                        .binputs{
+                            input{
+                                width: 98%;
+                            }
+                        }
+                    }
+                    .billing-checkbox {
+                        .checkbox {
+                            height: 1.3rem;
+                            margin-right: 0.5rem;
+                        }
+
+                        p {
+                            font-size: 0.9rem;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 1.3rem;
+                    }
+
+                    .btn-save {
+                        width: 8rem;
+                        height: 2.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+@media only screen and (max-width: 386px) {
+
+    .manage-address-wrapper {
+        .manage-address-card {
+      .manage-address-content{
+          .manage-address-details{
+              p{
+                font-size: 0.8rem;
+              }
+          }
+      }
+        }
+    }
+
+    .checkout-input-container {
+        .checkout-input-main {
+           
+
+            .billing-address-header {
+                h2 {
+                    font-size: 1.1rem;
+                }
+            }
+
+            .billing-address-input-content {
+                .billing-inputs {
+                    .biinputs-container {
+                        .binputs {
+
+                            label {
+                                font-size: 0.8rem;
+                            }
+                        }
+
+                    }
+
+                    .billing-checkbox {
+
+                        p {
+                            font-size: 0.7rem;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 1.1rem;
+                    }
+
+                    .btn-save {
+                        width: 7rem;
+                        height: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

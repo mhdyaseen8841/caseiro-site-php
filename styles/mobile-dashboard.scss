@@ -1,0 +1,185 @@
+.dashboard--container {
+    display: flex !important;
+    justify-content: center;
+
+    .navigation-container {
+        display: block;
+        width: 90%;
+        margin-bottom: 2rem;
+        .navigation--wrapper {
+            .profile--nav {
+                height: 10rem;
+                padding: 3rem;
+            }
+
+            .profile-nav--image {
+                width: 8rem;
+                height: 8rem;
+                border-radius: 50%;
+                border: 3px solid #fff;
+            }
+
+            .profile-name--wrapper {
+                margin-left: 3rem;
+                cursor: pointer;
+
+                h3 {
+                    font-weight: 600;
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-weight: 500;
+
+                    font-size: 1.1rem;
+                }
+            }
+
+            .dashboard-nav {
+                cursor: pointer;
+                height: 8rem;
+
+                .nav--item {
+                    pointer-events: none;
+                    margin: 0.5rem 0 0 1rem;
+
+                    .nav--icon {
+                        width: 4rem;
+                    }
+
+                    span {
+                        margin-left: 3rem;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            .dashboard-nav:hover {
+                background-color: #eaeaea;
+                ;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .dashboard--container {
+        display: none !important;
+    }
+
+    footer {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .dashboard--container {
+        .navigation-container {
+            margin-top: 6rem;
+
+            .navigation--wrapper {
+                .profile--nav {
+                    .profile-nav--image {
+                        width: 6rem;
+                        height: 6rem;
+                        border: 2px solid #fff;
+                    }
+
+                    .profile-name--wrapper {
+                        h3 {
+                            font-size: 1.5rem;
+                        }
+
+                        p {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+
+                .dashboard-nav {
+                    height: max-content;
+
+                    .nav--item {
+                        .nav--icon {
+                            width: 3.5rem;
+                        }
+
+                        span {
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .dashboard--container {
+        .navigation-container {
+            .navigation--wrapper {
+                .profile--nav {
+                    height: 8rem;
+                    padding: 1.5rem;
+                }
+
+                .dashboard-nav {
+                    padding: 0.2rem;
+
+                    .nav--item {
+                        padding: 0.5rem;
+
+                        .nav--icon {
+                            width: 3rem;
+                        }
+
+                        span {
+                            margin-left: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .dashboard--container {
+        .navigation-container {
+
+
+            .navigation--wrapper {
+                .profile--nav {
+                    height: 7rem;
+
+                    .profile-nav--image {
+                        width: 5rem;
+                        height: 5rem;
+                    }
+
+                    .profile-name--wrapper {
+                        margin-left: 1rem;
+
+                        h3 {
+                            font-size: 1.3rem;
+                        }
+
+                        p {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+
+                .dashboard-nav {
+                    .nav--item {
+
+                        span {
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

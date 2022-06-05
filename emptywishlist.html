@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/wishlist.style.css">
+    <link rel="stylesheet" type="text/css" href="styles/emptywishlist.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+	
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Caseiro Empty Wishlist</title>
+</head>
+<body>
+    <header>
+        <div class="ad">
+
+        </div>
+        <div class="head">
+			<div class="menu-icon" onclick="toggleMenu()">
+				<div>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+            <ul id="category-list">
+                <li>
+                    <a class="category category--active" href="/sellers.html">Art</a>
+                </li>
+                <li>
+                    <a class="category" href="/sellers.html">Food</a>
+                </li>
+                <li>
+                    <a class="category" href="/sellers.html">Fashion</a>
+                </li>
+                <li>
+                    <a class="category" href="/sellers.html">Gift</a>
+                </li>
+                <li>
+                    <a class="category" href="/sellers.html">Beauty</a>
+                </li>
+            </ul>
+			<a href="/" class="logo">
+				<img src="assets/logo.png" class="logo" alt="">
+			</a>
+			<ul id="core-list">
+                <li>
+                    <a class="category core-rm" href="#">About</a>
+                </li>
+                <li>
+                    <a class="category core-rm" href="#">عرب</a>
+                </li>
+                <li class="category category-icon search-icon-wrapper" onclick="openSearch()">
+                    <i class="material-icons search-icon--link">search</i>
+                </li> 
+                <li class="category category-icon">
+                    <a href="/profile.html" class="material-icons">person_outline</a>
+                </li>
+                <li class="category category-icon">
+                    <a href="/cart.html" class="material-icons-outlined">shopping_bag</a>
+                </li>
+            </ul>
+        </div>
+		<form class="search-container">
+			<div class="search-wrapper">
+				<i class="material-icons search-icon">search</i>
+				<input type="search" name="search" placeholder="Search here..." id="search-input" class="search-input">
+				<button type="submit" class="btn-search">Search</button>
+				<i class="material-icons-outlined close-icon" onclick="closeSearch()">close</i>
+			</div>
+		</form>
+
+		<ul class="mobile-menu">
+			<li>
+				<a class="menu--item" href="#">Art</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">Food</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">Fashion</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">Gift</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">Beauty</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">About</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">عرب</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">Seller Login</a>
+			</li>
+		</ul>
+    </header>
+
+
+    <div class="dashboard--container">
+		<ul class="bread-crump">
+            <li>Home</li>
+			<span class="material-symbols-outlined">
+				arrow_right
+				</span>
+            <li>Account</li>
+			<span class="material-symbols-outlined">
+				arrow_right
+				</span>
+            <li>Wishlist</li>
+        </ul>
+        <div class="navigation-container">
+            <div class="navigation--wrapper">
+                <div class="profile--nav">
+                    <img src="/assets/images/profile.png" class="profile-nav--image" alt="">
+                    <div class="profile-name--wrapper">
+                        <h3>Muhsin.N</h3>
+                        <p>Account Details ></p>
+                    </div>
+                </div>
+    
+                <ul class="dashboard-nav">
+                    <li >
+                        <a href="/myorders.html" class="nav--item">
+                            <img src="/assets/icons/orders.png" alt="" class="nav--icon">
+                            <span>Your Orders</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/manage-address.html" class="nav--item">
+                            <img src="/assets/icons/address.png" alt="" class="nav--icon">
+                            <span>Manage Address</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/wishlist.html" class="nav--item">
+                            <img src="/assets/icons/wishlist.png" alt="" class="nav--icon">
+                            <span>My Wishlist</span>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="/login.html" class="nav--item">
+                            <img src="/assets/icons/logout.png" alt="" class="nav--icon">
+                            <span>Logout</span>
+                       </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+     <div class="wishlist-empty-container">  
+                <img src="/assets/images/emptywhishlist.png" alt="">
+                <h3>Empty Wish List</h3>
+                <p>You have no items in your wishlist. Start adding!</p>
+       
+     </div>
+        
+    </div>
+
+    <footer>
+		<img src="assets/images/footer logo.png" class="footer-logo" alt="">
+		<div class="help-container">
+			<h3 class="footer--title">Help</h3>
+			<ul class="footer-links">
+				<li>
+					<a href="#" class="footer--link">Help Center</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Contact Us</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Return & Exchange</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Rewards</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Refer a Friend</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Shipping Policy</a>
+				</li>
+			</ul>
+		</div>
+		<div class="shop-container">
+			<h3 class="footer--title">Shop</h3>
+			<ul class="footer-links">
+				<li>
+					<a href="#" class="footer--link">Men’s</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Women’s</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Kid’s</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Accessories</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Sale</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Students</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">E-gift Codes</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Corporate orders</a>
+				</li>
+			</ul>
+		</div>
+		<div class="company-container">
+			<h3 class="footer--title">Company</h3>
+			<ul class="footer-links">
+				<li>
+					<a href="#" class="footer--link">About Us</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Careers</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Become a Retailer</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Store Locator</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Ambassadors</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Aﬃliate Program</a>
+				</li>
+			</ul>
+		</div>
+		<p class="copyright">
+			&copy;caseiro. All Rights Reserved. Privacy Policy & Copyright Notice.
+		</p>
+	</footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="scripts/scripts.js"></script>
+</html>

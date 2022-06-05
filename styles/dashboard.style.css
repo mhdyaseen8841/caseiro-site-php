@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600&display=swap");
+@font-face {
+  font-family: 'primary';
+  src: url("assets/fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Helvetica', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  color: #0c0c0c;
+}
+/*# sourceMappingURL=dashboard.style.css.map */

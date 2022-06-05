@@ -1,0 +1,343 @@
+$light-pink:#c44786;
+
+.order-preview-container{
+    background: #E5E5E5;
+    padding: 8rem 12%;
+
+    .order-preview-wrapper{
+        display: grid;
+        grid-template-columns: 4fr 20rem;
+        grid-template-rows: max-content max-content max-content;
+        grid-gap: 1rem;
+        grid-template-areas: "breadcrump breadcrump"
+                             "address price"
+                             "items price";
+    }
+    .bread-crump{
+        margin-bottom: 1rem;
+        grid-area: breadcrump;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: max-content;
+        li{
+            display: flex;
+            align-items: center;
+            opacity: 0.7;
+            a{
+                color: #0c0c0c;
+                text-decoration: none;
+            }
+            &::after{
+                content: '>';
+                margin: 0 1rem ;
+            }
+            &:last-child{
+                opacity: 1;
+                &::after{
+                    content: ''
+                }
+            }
+        }
+    } 
+    .preview-title{
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+    .divider-line{
+        margin: 1rem 0;
+    }
+    .address-wrapper{
+        grid-area: address;
+        background: #fff;
+        border-radius: 10px;
+        border: 2px dashed rgba(0, 0, 0, 0.333);
+        padding: 2rem;
+        .address{
+            list-style: none;
+            font-size: 1rem;
+            color: #010101de;
+        }
+        .address-icon{
+            font-size: 1.2rem;
+            margin-right: 1rem;
+        }
+        li{
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .status-wrapper{
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        background: rgb(25, 162, 25);
+        border-radius: 5px;
+        padding: 0.2rem 0.5rem;
+        color: #fff;
+        width: max-content;
+        i{
+            margin-right: 0.5rem;
+            font-size: 0.9rem;
+        }
+    }
+
+    .items-detail-wrapper{
+        grid-area: items;
+        background: #fff;
+        border-radius: 10px;
+        border: 2px dashed rgba(0, 0, 0, 0.333);
+        padding: 2rem;
+
+        .order-id{
+            font-weight: 500;
+            color: #c44786;
+        }
+
+        .item-details{
+            border: none;
+            width: 100%;
+            margin-top: 1rem;
+            th,td{
+                border-bottom: 2px solid rgba(0, 0, 0, 0.333);
+                padding: 0.5rem 1rem;
+                text-align: right;
+                &:first-child{
+                    padding-left: 0;
+                    display: flex;
+                    align-items: center;
+                    text-align: left;
+                }
+                &:last-child{
+                    padding-right: 0;
+                }
+            }
+            th{
+                font-size: 1rem;
+                font-weight: 500;
+                color: #c44786;
+                border: none;
+            }
+            td{
+                font-size: 0.9rem;
+                color: #000000;
+            }
+            tfoot{
+                td{
+                    height: 2.5rem;
+                    border-bottom: 1px dashed rgba(0, 0, 0, 0.333);
+                    text-align: right;
+                    &:first-child{
+                        border: none;
+                    }
+                }
+            }
+            .table-header-1{
+                text-align: left;
+            }
+            
+            .item-thumbnail{
+                width: 2rem;
+                height: 3rem;
+                border-radius: 5px;
+                object-fit: cover;
+                object-position: center;
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    .price-wrapper{
+        grid-area: price;
+        background: #fff;
+        border-radius: 10px;
+        border: 2px dashed rgba(0, 0, 0, 0.333);
+        padding: 1rem;
+        height: max-content;
+        position: sticky;
+        top: 7rem;
+
+        .price-list{
+            list-style: none;
+            li{
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem 0;
+                border-bottom: 1px dashed rgb(79, 79, 79);
+                font-size: 0.9rem;
+            }
+            .total-wrapper{
+                border: none;
+                font-size: 1rem;
+                color: #c44786;
+            }
+        }
+        .status-wrapper{
+            width: 100%;
+            justify-content: center;
+        }
+    } 
+}
+.popup-bg{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .popup-container{
+        width: 80%;
+        height: 80%;
+        background: #fff;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2rem;
+        position: relative;
+    }
+    img{
+        width: 5rem;
+    }
+    .popup-heading{
+        margin: 1rem 0;
+        font-size: 2rem;
+    }
+    .popup-description{
+        max-width: 30rem;
+        text-align: center;
+    }
+    .close-icon{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    .order-preview-container{
+        padding: 8rem 5%;
+    }
+}
+@media only screen and (max-width: 1250px) {
+    .order-preview-container{
+        .order-preview-wrapper{
+            grid-template-columns: 4fr 15rem;
+        }
+    }
+}
+@media only screen and (max-width:900px) {
+    .order-preview-container{
+        padding: 5rem 1rem;
+        background: #fff;
+        .order-preview-wrapper{
+            grid-template-columns: 1fr;
+            grid-template-areas: "address"
+                                 "items"
+                                 "price";
+        }
+        .bread-crump{
+            display: none;
+        }
+        .address-wrapper,
+        .items-detail-wrapper,
+        .price-wrapper{
+            padding: 1rem;
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .popup-bg{
+        .popup-container{
+            height: 20rem;
+        }
+        .popup-heading{
+            font-size: 1.5rem;
+        }
+    }
+}
+@media only screen and (max-width:500px) {
+    .order-preview-container{
+        .preview-title{
+            font-size: 1rem;
+        }
+        .address-wrapper{
+            .address{
+                font-size: 13px;
+            }
+        }
+        .status-wrapper{
+            font-size: 13px;
+        }
+        .items-detail-wrapper{
+            .item-details{
+                th,td{
+                    font-size: 13px;
+                    padding: 3px 0.5rem;
+                }
+                tfoot{
+                    display: block;
+                    margin-left: 90%;
+                }
+            }
+
+        }
+        .price-wrapper{
+            .price-list{
+                li{
+                    font-size: 13px;
+                }
+                .total-wrapper{
+                    font-size: 14px;
+                }
+            }
+        }
+
+    }
+    .popup-bg{
+        .popup-container{
+            height: 20rem;
+            width: 90%;
+        }
+        .popup-heading{
+            font-size: 1.1rem;
+            text-align: center;
+        }
+        img{
+            width: 3rem;
+        }
+    }
+}
+@media only screen and (max-width:400px) {
+    .order-preview-container{
+        .items-detail-wrapper{
+            .item-details{
+                tfoot{
+                    margin-left: 88%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .order-preview-container{
+        .items-detail-wrapper{
+            .item-details{
+                tfoot{
+                    margin-left: 86%;
+                }
+            }
+        }
+    }
+}

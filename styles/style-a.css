@@ -1,0 +1,145 @@
+.varient_class {
+  margin: 3px;
+  height: 39px;
+  margin-top: 1%;
+  border: none;
+  overflow: hidden;
+  outline: none;
+}
+.varient_class::-moz-focus-inner {
+  box-shadow: none;
+  border: 0;
+  outline: none;
+}
+.varient_class:focus {
+  box-shadow: none;
+  outline: none;
+}
+.varient_class option:checked {
+  box-shadow: none;
+  background: transparent;
+  background-color: transparent;
+  border: 2px solid #F14D6A;
+  outline: none;
+
+  /* for IE */
+}
+
+.varient_class option {
+  box-shadow: none;
+  align-items: flex-start;
+  min-width: 30px;
+  max-width: 85px;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 7px 3px;
+  text-align: center;
+  margin-top: 2%;
+  margin-right: 20px;
+  display: inline-block;
+  cursor: pointer;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  color: black;
+  outline: none;
+}
+
+
+/* .main-image {
+  transition: transform 0.2s;
+  
+}
+
+.main-image:hover {
+  transform: scale(1.1);
+
+  position: absolute;
+  right: 0;
+} */
+
+.cart:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.buy:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.more:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.btn-add-to-cart:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.btn-submit:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* .button4 {
+    width: 75px;
+    border-radius: 28px;
+
+    background: linear-gradient(93.46deg, #de388d 0%, #ff5d50 100%);
+    border: none;
+    color: white;
+    padding: 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 7.5px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: 500;
+  } */
+
+.button4 {
+  width: 100px;
+  border-radius: 28px;
+
+  background: linear-gradient(93.46deg, #de388d 0%, #ff5d50 100%);
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-weight: 550;
+}
+.button4:hover {
+  opacity: 0.8;
+}
+
+.badge {
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 14px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #c67605;
+}
+#lblCartCount {
+  font-size: 13px;
+  background: #de388d;
+  color: #fff;
+  padding: 0 5px;
+  vertical-align: top;
+  margin-left: -10px;
+}
+
+.modal--title {
+  margin-top: 1%;
+}

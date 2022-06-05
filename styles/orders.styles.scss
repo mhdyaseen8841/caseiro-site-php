@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600&display=swap');
+
+$light-pink:#c44786;
+$light-orange: #e55c5b;
+$muted: #eeeeee;
+$black: #0c0c0c;
+$main-bg: rgb(238, 238 , 238);
+$gray: #8d8d8d;
+$gradient-primary: linear-gradient(180deg, #C44786 0%, #E55C5B 100%);
+
+@font-face {
+    font-family: 'primary';
+    src: url('assets/fonts/alfont_com_AlFont_com_helveticaneueltarabicroman1.ttf') format("truetype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    color: $black;
+}
+.empty-wrapper{
+    width: 100%;
+    height: 100vh;
+    background: $main-bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.empty-container{
+    width: 76%;
+    height: 70%;
+    padding: 3rem 0;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .btn-empty{
+        background: $gradient-primary;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        color: #fff;
+        font-weight: 600;
+        border: none;
+    }
+    .empty-message{
+        margin-bottom: 1rem
+    }
+    .empty--title{
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .empty-wrapper{
+        background: #fff;
+    }
+    .empty-container{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .empty-container{
+        .empty--title{
+            font-size: 1.2rem;
+        }
+    }
+}

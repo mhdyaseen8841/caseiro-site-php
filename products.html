@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Caseiro Products</title>
+</head>
+<body>
+    <header>
+        <div class="ad">
+
+        </div>
+        <div class="head">
+			<div class="menu-icon" onclick="toggleMenu()">
+				<div>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+            <ul id="category-list">
+                <li>
+                    <a class="category category--active" href="/sellers.html">Art</a>
+                </li>
+                <li>
+                    <a class="category" href="/sellers.html">Food</a>
+                </li>
+                <li>
+                    <a class="category" href="/sellers.html">Fashion</a>
+                </li>
+                <li>
+                    <a class="category" href="/sellers.html">Gift</a>
+                </li>
+                <li>
+                    <a class="category" href="/sellers.html">Beauty</a>
+                </li>
+            </ul>
+			<a href="/" class="logo">
+				<img src="assets/logo.png" class="logo" alt="">
+			</a>
+			<ul id="core-list">
+                <li>
+                    <a class="category core-rm" href="#">About</a>
+                </li>
+                <li>
+                    <a class="category core-rm" href="#">عرب</a>
+                </li>
+                <li class="category category-icon search-icon-wrapper" onclick="openSearch()">
+                    <i class="material-icons search-icon--link">search</i>
+                </li> 
+                <li class="category category-icon">
+                    <a href="/profile.html" class="material-icons">person_outline</a>
+                </li>
+                <li class="category category-icon">
+                    <a href="/cart.html" class="material-icons-outlined">shopping_bag</a>
+                </li>
+            </ul>
+        </div>
+		<form class="search-container">
+			<div class="search-wrapper">
+				<i class="material-icons search-icon">search</i>
+				<input type="search" name="search" placeholder="Search here..." id="search-input" class="search-input">
+				<button type="submit" class="btn-search">Search</button>
+				<i class="material-icons-outlined close-icon" onclick="closeSearch()">close</i>
+			</div>
+		</form>
+
+		<ul class="mobile-menu">
+			<li>
+				<a class="menu--item" href="#">Art</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">Food</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">Fashion</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">Gift</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">Beauty</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">About</a>
+			</li>
+			<li>
+				<a class="menu--item" href="#">عرب</a>
+			</li>
+            <li>
+				<a class="menu--item" href="#">Seller Login</a>
+			</li>
+		</ul>
+    </header>
+    
+    <button class="btn-filter material-icons-outlined" onclick="openFilter()">filter_alt</button>
+
+    <main class="products-page-wrapper">
+        <ul class="bread-crump">
+            <li>Home</li>
+            <span class="material-symbols-outlined">
+                arrow_right
+                </span>
+            <li>Products</li>
+        </ul>
+        <nav class="filter-navigation">
+            <div class="nav-header">
+                <i class="material-icons-outlined" onclick="closeFilter()">arrow_back</i>
+            </div>
+            <div class="filter-wrapper">
+                <h3 class="filter--title">Categories</h3>
+                <ul class="categories filter--object">
+                    <li class="category">
+                        <input type="checkbox" name="art/decore" class="check category--checkbox">
+                        <span>Art/Decore</span>
+                        <span class="number-of-items">(12)</span>
+                    </li>
+                    <li class="category">
+                        <input type="checkbox" name="food" class="check category--checkbox">
+                        <span>Food</span>
+                        <span class="number-of-items">(12)</span>
+                    </li>
+                    <li class="category">
+                        <input type="checkbox" name="fashion" class="check category--checkbox">
+                        <span>Fashion</span>
+                        <span class="number-of-items">(12)</span>
+                    </li>
+                    <li class="category">
+                        <input type="checkbox" name="gifts" class="check category--checkbox">
+                        <span>Gifts</span>
+                        <span class="number-of-items">(12)</span>
+                    </li>
+                    <li class="category">
+                        <input type="checkbox" name="beauty" class="check category--checkbox">
+                        <span>Beauty</span>
+                        <span class="number-of-items">(12)</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="filter-wrapper">
+                <h3 class="filter--title">Sellers</h3>
+                <ul class="brands filter--object">
+                    <li class="brand">
+                        <input type="checkbox" name="vertus" class="check brand--checkbox">
+                        <span>Vertus</span>
+                        <span class="number-of-items">(121)</span>
+                    </li>
+                    <li class="brand">
+                        <input type="checkbox" name="splash" class="check brand--checkbox">
+                        <span>Splash</span>
+                        <span class="number-of-items">(33)</span>
+                    </li>
+                    <li class="brand">
+                        <input type="checkbox" name="namshi" class="check brand--checkbox">
+                        <span>Namshi</span>
+                        <span class="number-of-items">(24)</span>
+                    </li>
+                    <li class="brand">
+                        <input type="checkbox" name="ajmal" class="check brand--checkbox">
+                        <span>Ajmal</span>
+                        <span class="number-of-items">(132)</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="filter-wrapper">
+                <h3 class="filter--title">Colors</h3>
+                <ul class="colors filter--object">
+                    <li class="color">
+                        <input type="checkbox" name="red" class="check color--checkbox">
+                        <span class="color--indicator color--red"></span>
+                        <span>Red</span>
+                        <span class="number-of-items">(121)</span>
+                    </li>
+                    <li class="color">
+                        <input type="checkbox" name="blue" class="check color--checkbox">
+                        <span class="color--indicator color--blue"></span>
+                        <span>Blue</span>
+                        <span class="number-of-items">(33)</span>
+                    </li>
+                    <li class="color">
+                        <input type="checkbox" name="orange" class="check color--checkbox">
+                        <span class="color--indicator color--orange"></span>
+                        <span>Orange</span>
+                        <span class="number-of-items">(24)</span>
+                    </li>
+                    <li class="color">
+                        <input type="checkbox" name="pink" class="check color--checkbox">
+                        <span class="color--indicator color--pink"></span>
+                        <span>Pink</span>
+                        <span class="number-of-items">(132)</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="filter-wrapper">
+                <h3 class="filter--title">Price</h3>
+                <ul class="prices filter--object">
+                    <li class="price">
+                        <input type="checkbox" name="below_thousand" class="check price--checkbox">
+                        <span>Below 1000</span>
+                        <span class="number-of-items">(121)</span>
+                    </li>
+                    <li class="price">
+                        <input type="checkbox" name="thousand_to_twothousand" class="check price--checkbox">
+                        <span>1000-2000</span>
+                        <span class="number-of-items">(33)</span>
+                    </li>
+                    <li class="price">
+                        <input type="checkbox" name="twothousand_to_fivethousand" class="check price--checkbox">
+                        <span>2000-5000</span>
+                        <span class="number-of-items">(24)</span>
+                    </li>
+                    <li class="price">
+                        <input type="checkbox" name="above_fivethousand" class="check price--checkbox">
+                        <span>Above 5000</span>
+                        <span class="number-of-items">(132)</span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <select name="sort" id="sort">
+            <option value="null">SORT</option>
+            <option value="l-h">Price low to high</option>
+            <option value="l-h">Price high to Low</option>
+            <option value="l-h">New arrivals</option>
+        </select>
+
+        <div class="products-listing">
+            <h2 class="products-listing--title">Products for you</h2>
+            <div class="products-list-wrapper">
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img  onclick="openModal()" class="product--image" src="assets/images/perfume3.webp" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn btn-view" onclick="openModal()">Quick view</button>
+                        </div>
+                        <i class="material-icons-outlined wishlist-outlined">favorite_border</i>
+                    </div>
+                    <h3 class="product-card--title">USTRAA Cologne Spray Base Camp Perfume - 100 ml  (For Men)</h3>
+                    <div class="add-to-cart">
+                        <p class="product--price">AED 600.00</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img  onclick="openModal()" class="product--image" src="assets/images/perfume3.webp" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn btn-view" onclick="openModal()">Quick view</button>
+                        </div>
+                        <i class="material-icons-outlined wishlist-outlined">favorite_border</i>
+                    </div>
+                    <h3 class="product-card--title">USTRAA Cologne Spray Base Camp Perfume - 100 ml  (For Men)</h3>
+                    <div class="add-to-cart">
+                        <p class="product--price">AED 600.00</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img  onclick="openModal()" class="product--image" src="assets/images/perfume3.webp" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn btn-view" onclick="openModal()">Quick view</button>
+                        </div>
+                        <i class="material-icons-outlined wishlist-outlined">favorite_border</i>
+                    </div>
+                    <h3 class="product-card--title">USTRAA Cologne Spray Base Camp Perfume - 100 ml  (For Men)</h3>
+                    <div class="add-to-cart">
+                        <p class="product--price">AED 600.00</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img  onclick="openModal()" class="product--image" src="assets/images/perfume3.webp" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn btn-view" onclick="openModal()">Quick view</button>
+                        </div>
+                        <i class="material-icons-outlined wishlist-outlined">favorite_border</i>
+                    </div>
+                    <h3 class="product-card--title">USTRAA Cologne Spray Base Camp Perfume - 100 ml  (For Men)</h3>
+                    <div class="add-to-cart">
+                        <p class="product--price">AED 600.00</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img  onclick="openModal()" class="product--image" src="assets/images/perfume3.webp" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn btn-view" onclick="openModal()">Quick view</button>
+                        </div>
+                        <i class="material-icons-outlined wishlist-outlined">favorite_border</i>
+                    </div>
+                    <h3 class="product-card--title">USTRAA Cologne Spray Base Camp Perfume - 100 ml  (For Men)</h3>
+                    <div class="add-to-cart">
+                        <p class="product--price">AED 600.00</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img  onclick="openModal()" class="product--image" src="assets/images/perfume3.webp" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn btn-view" onclick="openModal()">Quick view</button>
+                        </div>
+                        <i class="material-icons-outlined wishlist-outlined">favorite_border</i>
+                    </div>
+                    <h3 class="product-card--title">USTRAA Cologne Spray Base Camp Perfume - 100 ml  (For Men)</h3>
+                    <div class="add-to-cart">
+                        <p class="product--price">AED 600.00</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img  onclick="openModal()" class="product--image" src="assets/images/perfume3.webp" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn btn-view" onclick="openModal()">Quick view</button>
+                        </div>
+                        <i class="material-icons-outlined wishlist-outlined">favorite_border</i>
+                    </div>
+                    <h3 class="product-card--title">USTRAA Cologne Spray Base Camp Perfume - 100 ml  (For Men)</h3>
+                    <div class="add-to-cart">
+                        <p class="product--price">AED 600.00</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img  onclick="openModal()" class="product--image" src="assets/images/perfume3.webp" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn btn-view" onclick="openModal()">Quick view</button>
+                        </div>
+                        <i class="material-icons-outlined wishlist-outlined">favorite_border</i>
+                    </div>
+                    <h3 class="product-card--title">USTRAA Cologne Spray Base Camp Perfume - 100 ml  (For Men)</h3>
+                    <div class="add-to-cart">
+                        <p class="product--price">AED 600.00</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img  onclick="openModal()" class="product--image" src="assets/images/perfume3.webp" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn btn-view" onclick="openModal()">Quick view</button>
+                        </div>
+                        <i class="material-icons-outlined wishlist-outlined">favorite_border</i>
+                    </div>
+                    <h3 class="product-card--title">USTRAA Cologne Spray Base Camp Perfume - 100 ml  (For Men)</h3>
+                    <div class="add-to-cart">
+                        <p class="product--price">AED 600.00</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img  onclick="openModal()" class="product--image" src="assets/images/perfume3.webp" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn btn-view" onclick="openModal()">Quick view</button>
+                        </div>
+                        <i class="material-icons-outlined wishlist-outlined">favorite_border</i>
+                    </div>
+                    <h3 class="product-card--title">USTRAA Cologne Spray Base Camp Perfume - 100 ml  (For Men)</h3>
+                    <div class="add-to-cart">
+                        <p class="product--price">AED 600.00</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img  onclick="openModal()" class="product--image" src="assets/images/perfume3.webp" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn btn-view" onclick="openModal()">Quick view</button>
+                        </div>
+                        <i class="material-icons-outlined wishlist-outlined">favorite_border</i>
+                    </div>
+                    <h3 class="product-card--title">USTRAA Cologne Spray Base Camp Perfume - 100 ml  (For Men)</h3>
+                    <div class="add-to-cart">
+                        <p class="product--price">AED 600.00</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+
+                <div class="product--card">
+                    <div class="card--image-wrapper">
+                        <img  onclick="openModal()" class="product--image" src="assets/images/perfume3.webp" alt="">
+                        <img class="product--provider" src="assets/images/vertus.png" alt="">
+                        <div class="card-btn-view--wrapper">
+                            <button class="btn btn-view" onclick="openModal()">Quick view</button>
+                        </div>
+                        <i class="material-icons-outlined wishlist-outlined">favorite_border</i>
+                    </div>
+                    <h3 class="product-card--title">USTRAA Cologne Spray Base Camp Perfume - 100 ml  (For Men)</h3>
+                    <div class="add-to-cart">
+                        <p class="product--price">AED 600.00</p>
+                        <button>Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="modal-wrapper">
+		<div class="modal-container">
+			<i class="material-icons-outlined modal-close" onclick="closeModal()">close</i>
+			<img src="assets/images/ck.jpg" class="modal--product-image" alt="">
+			<div class="modal--product-details">
+				<h1 class="product-name">Wajah Ceramic Vase</h1>
+				<p class="product-price">AED 500.00</p>
+
+				<div class="colors-wrapper">
+					<h4 class="modal--title">Colors<h4/>
+					<ul class="colors">
+						<li class="color"></li>
+						<li class="color"></li>
+						<li class="color"></li>
+					</ul>
+				</div>
+
+				<div class="quantity-wrapper">
+					<h4 class="modal--title">Quantity</h4>
+					<div class="quantity-and-stock-wrapper">
+						<ul class="quantity-changer">
+							<li class="quantity">1</li>
+							<li class="quantity-decreament">-</li>
+							<li class="quantity-increament">+</li>
+						</ul>
+						<div class="stock-status-wrapper">
+							<i class="material-icons-outlined stock-status-icon">
+								done
+							</i>
+							<p class="stock-status">In Stock Online</p>
+						</div>
+					</div>
+				</div>
+				<button class="btn-add-to-cart">Add to cart</button>
+				<a href="#">View full details</a>
+			</div>
+		</div>
+	</section>
+
+    <footer>
+		<img src="assets/images/footer logo.png" class="footer-logo" alt="">
+		<div class="help-container">
+			<h3 class="footer--title">Help</h3>
+			<ul class="footer-links">
+				<li>
+					<a href="#" class="footer--link">Help Center</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Contact Us</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Return & Exchange</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Rewards</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Refer a Friend</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Shipping Policy</a>
+				</li>
+			</ul>
+		</div>
+		<div class="shop-container">
+			<h3 class="footer--title">Shop</h3>
+			<ul class="footer-links">
+				<li>
+					<a href="#" class="footer--link">Men’s</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Women’s</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Kid’s</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Accessories</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Sale</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Students</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">E-gift Codes</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Corporate orders</a>
+				</li>
+			</ul>
+		</div>
+		<div class="company-container">
+			<h3 class="footer--title">Company</h3>
+			<ul class="footer-links">
+				<li>
+					<a href="#" class="footer--link">About Us</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Careers</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Become a Retailer</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Store Locator</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Ambassadors</a>
+				</li>
+				<li>
+					<a href="#" class="footer--link">Aﬃliate Program</a>
+				</li>
+			</ul>
+		</div>
+		<p class="copyright">
+			&copy;caseiro. All Rights Reserved. Privacy Policy & Copyright Notice.
+		</p>
+	</footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="scripts/scripts.js"></script>
+</html>
